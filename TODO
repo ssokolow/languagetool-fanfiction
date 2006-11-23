@@ -1,11 +1,10 @@
-- poor choices in character names: (that can be auto-detected)
-	- Calling the Sailor Moon characters by their english-dubbed names.
 - A chapter without a single <hr> tag is either too short or using jury-rigged alternatives.
 - How about a check for mixed tenses?
 - Perhaps a set of supplemental dictionaries for aspell/ispell/etc. which contain tons of anime-related names and terms, complete with proper capitalization?
 - Try to confirm an even number of double-quote characters and possibly some instances of single quote characters. (ensure closed quotes)
 - Look into some way of detecting at least some mis-uses of "it's".
 - Test for run-on sentences, oversized paragraphs, and undersized chapters. (will require some statistical analysis)
+- Remember to have a distinction between "personal" and "impersonal" proper nouns. (personal ones can't be prefixed by "the")
 
 Stuff to improve:
 - Checking for dubbed named when they are a poor choice.
@@ -19,4 +18,3 @@ Stuff to improve:
 	3. whitelisting certain sentence fragment structure+position combinations
 	4. testing with known-good documents and then refining the rules
 - The BNF-derivative ruleset should support regex-like capture groups in order to allow MS Word-like suggestion of alternatives.
->>>>>>> 32530a5... - Cleaned up the TODO list more.

@@ -1,4 +1,21 @@
 #TODO: This should be more extensible. Perhaps XML?
+/* Perhaps something like this...
+
+<typomap>
+    <typo content="to loose" >
+      <explanation>While loose can be used as a verb, it's use as such is extremely rare.
+More commonly, people intended either &quot;too loose&quot; or &quot;to lose&quot;.</explanation>
+      <correction probability="0.80" content="too loose" >
+        <Explanation>You use &quot;too&quot; to indicate that something is excessive. 
+For example, &quot;too small&quot;, &quot;too slow&quot;, and so on.</Explanation>
+      </correction>
+      <correction probability="0.15" content="to lose" >
+        <explanation>The infinitive form of &quot;lose&quot; (which means &quot;to fail&quot;) is &quot;to lose&quot;.</explanation>
+      </correction>
+    </typo>
+  </typomap>
+
+*/
 
 down load	download		Download is one word.
 the sight	the site|the sight	50/50 chance
@@ -10,6 +27,7 @@ buts		but|butt|butts
 going high wire	going haywire
 a looser	a loser
 will loose	will lose
+looses		loses
 weighted west	weighted vest
 to loose	too loose|to lose
 wooded leg	wooden leg
@@ -46,3 +64,31 @@ go to collage	go to college
 a near by	a nearby
 the near by	the nearby
 did get that either	didn't get that either
+guessing work	guesswork
+cry-baby	crybaby
+no biggy	no biggie
+basterd		bastard
+bastered	bastard		The only way this correction could be wrong is if your story is weird enough to make baster (eg. "Turkey Baster". The giant syringe you use when cooking a turkey) into an impromptu verb.
+would of	would have
+bored of	bored with
+way to young	way too young
+apposing	opposing	apposing is a valid word, but I've never seen it in use. However, I've seen several cases where someone used it when they intended to use "opposing".
+ying-yang	yin-yang	The proper spelling, as transliterated from the Chinese pronounciation, is yin-yang. Also, though nobody will understand what you mean, the proper term for the symbol (yin-yang is the concept) is "The Taijitu".
+appetite of	appetite for
+your late	you're late|your latté
+apart of	a part of|apart from
+effected	affected	It seems far more common to find affected used incorrectly than correctly. I'll have to gather some statistics to test this hypothesis.
+this rout	this route
+you're books	your books
+loose (your|his|her) head	lose \1 head
+holding a bowel		holding a bowl
+fool-hearty	foolhardy
+the crucio curse	the cruciatus curse
+head master	headmaster
+to far		too far
+your idle	your idol
+chocked		choked		I think "chocked" is a valid word (TODO: Confirm) but I've only ever seen it as a check-proof typo when the author intended to use "choked"
+cannon fodders	cannon fodder	"cannon fodder" is already plural.
+jell		gel
+the after math	the aftermath
+homicidal	homocidal
