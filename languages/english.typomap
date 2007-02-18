@@ -60,7 +60,7 @@ some one	someone
 costumer	customer
 Thank, <name>	Thanks, <name>|Thank <name>
 your sent	your scent|you sent
-go to collage	go to college
+to collage	to college	A "college" is an institute of higher learning. A "collage" is is a picture made of smaller pictures.
 a near by	a nearby
 the near by	the nearby
 did get that either	didn't get that either
@@ -93,3 +93,70 @@ jell		gel
 the after math	the aftermath
 homicidal	homocidal
 sore looser	sore loser	"looser" means "less tight". You are thinking of "loser".
+Asberger	Asperger	The syndrome is named after the guy who defined it, oddly as the spelling may seem to you.
+guinny		guinea
+guiny		guinea
+got board	got bored
+dowrey		dowry
+pealing potatoes	peeling potatoes	"pealing" is what a bell does. "peeling" is what you do to potatoes.
+figure print	fingerprint
+never losses its	never loses its		"losses" is the plural of "loss". The <TODO: term> of "lose" is "loses"
+reek on	the	wreak on the	You "reek" when you don't bathe. You "wreak" havoc or destruction.
+way to primitive	way too primitive
+banzai tree	bonsai tree
+coarse of act	course of action
+ruff time	rough time
+the entire ally		the entire alley
+St. Hebeke	St. Hebereke
+rapt up in	wrapped up in
+strong as steal		strong as steel
+I shutter to think	I shudder to think
+tit-bits	tidbits
+incase		in case
+fainted to the side	feinted to the side	To "faint" is to lose consciousness. To "feint" is to fake an action to deceive your opponent.
+On a side not	On a side note
+moral was deteriorating		morale was deteriorating|morals were deteriorating
+the boarders of the <proper noun> empire	the borders of the <proper noun> empire		"boarders" either ride skateboards or snowboards, or they are renting a room from someone. The edges of a country or empire are "borders".
+are quiet common	are quite common
+teh	the
+god son		godson|god's son
+biggest looser	biggest loser
+\d of		two of		It's rarely good form to use numbers that way.
+for instants	for instance
+what ever	whatever
+a rouse		a ruse|a rise
+their wears	their wares
+the vile of	the vial of
+a vile of	a vial of
+viles of	vials of
+grown mail	grown male
+male tomcat	tomcat		A tomcat is, by definition, male.
+mental scaring	mental scarring		Scaring is to Scare and Scarring is to Scar.
+night cloths	nightclothes	TODO: Confirm the lack of a space.
+meat [more] people	meet ? people
+plane old	plain old
+waist of time		waste of time
+fowl sorcerous  foul sorceress
+was dominate	was dominant
+access fat	excess fat
+heavy as led	heavy as lead
+their is always		there is always
+Your saying	You're saying
+allot	a lot|all of
+[^.?!,;] %NAME\?	, %NAME\?
+Your finally	You're finally
+your still in	you're still in		The only case I can think of where this correction would be in error is if "still" is a noun. (the kind of equipment you use to manufacture alcohol at home)
+Your alright	You're alright
+Your not        You're not|Your knot
+hes not		he's not
+the jest of it	the gist of it
+incase		in case
+a women		a woman
+give ? some advise	give ? some advice
+viscous slashes		vicious slashes
+what to ware	what to wear
+needles to say	needless to say
+out of site	out of sight		A "site" is a location. "Sight" is a type of perception.
+defiantly change	definitely change|defiantly change	It's much more common for "defiantly change" to be a typo than the intended phrase.
+duel citizenship	dual citizenship
+supressed a shutter	supressed a shudder
