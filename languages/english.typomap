@@ -6,7 +6,7 @@
       <explanation>While loose can be used as a verb, it's use as such is extremely rare.
 More commonly, people intended either &quot;too loose&quot; or &quot;to lose&quot;.</explanation>
       <correction probability="0.80" content="too loose" >
-        <Explanation>You use &quot;too&quot; to indicate that something is excessive. 
+        <Explanation>You use &quot;too&quot; to indicate that something is excessive.
 For example, &quot;too small&quot;, &quot;too slow&quot;, and so on.</Explanation>
       </correction>
       <correction probability="0.15" content="to lose" >
@@ -129,6 +129,7 @@ their wears	their wares
 the vile of	the vial of
 a vile of	a vial of
 viles of	vials of
+a vile([.,?!;])	a vial\1
 grown mail	grown male
 male tomcat	tomcat		A tomcat is, by definition, male.
 mental scaring	mental scarring		Scaring is to Scare and Scarring is to Scar.
@@ -175,3 +176,13 @@ crack pot	crackpot|crack, pot
 collage graduate	college graduate
 payed		paid
 fore-brooding	foreboding
+grand mother	grandmother
+be dominate		be dominant|be dominated|dominate
+more dominate	more dominant
+sore above the clouds	soar above the clouds
+lied on		lay on
+defiantly has	definitely has|has defiantly
+cloths	clothes|pieces of cloth	"Cloths" is the plural short form of "washcloth". It's almost always used in error in fiction.
+don't why	don't know why|don't care why
+broke joint	broken joint
+and all there	and all their
