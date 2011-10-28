@@ -1,0 +1,6 @@
+Stuff to consider:
+- A chapter without any <hr> tags is either too short or using jury-rigged alternatives.
+- Is it feasible to check for mixed tenses?
+- Decide how to provide a set of supplemental dictionaries for spell checkers so I don't have to anticipate every typo.
+- Look for a way to check for an even number of double-quote characters and possibly some instances of single quote characters. (ensure closed quotes)
+- Figure out how to test for run-on sentences, oversized paragraphs, and undersized chapters. (will require some statistical analysis)
