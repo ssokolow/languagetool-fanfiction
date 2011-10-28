@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Fanfiction Supplement for LanguageTool
+Copyright (C) 2006, 2007, 2009, 2011 Stephan Sokolow (http://blog.ssokolow.com)
+
+XML boilerplate borrowed from rules/en/grammar.xml
+Copyright (C) 2001-2007 Daniel Naber (http://www.danielnaber.de)
+
+See http://www.languagetool.org/development/ for help adding to this.
+
+TODO:
+- Add POS (part of speech) annotations to my rules.
+- Figure out why "Load Rule File" gives me ArrayIndexOutOfBoundsException on
+  this while replacing the standard english grammar.xml works properly.
+- Figure out what the heck "One of '{message}' is expected" means in the tests.
+- Figure out how to run the schema checker on this.
+- Generalize SAIYANS to something which can generically suggest removing the
+  "s" from a list of known loanwords that don't pluralize that way.
+
+- Translate the following remaining files:
+  - languages/english.typomap
+  - supplements/fanfiction.typomap
+  - supplements/harry_potter.typomap
+  - supplements/ranma.typomap (What remains)
+  - supplements/sailor_moon.typomap
+- Prune down the git repo to just the typomap files and this, then put it up
+  on GitHub.
+- Look for a universally-supported, easy-to-add user dictionary format so I can
+  also let the spell checker propose corrections for typos I haven't yet seen.
+-->
+<rules lang="en" xsi:noNamespaceSchemaLocation="../rules.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <category name="Dragonball Z">
+        <!-- NOTE: "Freeza" isn't technically a misspelling. It's a Viz
+             translation. -->
+        <rule id="SAIYAJINS" name="Use of 's' to pluralize 'saiyajin'">
+            <pattern>
+                <token>saiyajins</token>
+            </pattern>
+            <short>Use of 's' to pluralize Japanese loanword.</short>
+            <message>In normal use, most Japanese words are both singular and plural. This property is usually preserved when they are borrowed for English use and <suggestion>saiyajin</suggestion> should be used instead.</message>
+            <example type="incorrect">The <marker>saiyajins</marker> are attacking!</example>
+            <example type="correct"><marker>Saiyajin</marker> love to fight.</example>
+        </rule>
+        <rule id="SAIYANJIN" name="Saiyanjin (Americanians/Japaneseians)">
+            <!-- TODO: Is there a cleaner way to inflect-check for pluralization only? -->
+            <pattern>
+                <token regexp="yes">saiyanjin|saiyanjins</token>
+            </pattern>
+            <short>Possible typo</short>
+            <message>The word <suggestion>saiyajin</suggestion> means "people of saiya" in Japanese and <suggestion>saiyan</suggestion> means the same thing in English. 'saiyanjin' is multi-lingual mistake similar to saying 'people of American'.</message>
+            <example type="incorrect">Goku is a <marker>saiyanjin</marker>.</example>
+            <example type="incorrect"><marker>Saiyanjins</marker> have tails.</example>
+        </rule>
+    </category>
+    <category name="Final Fantasy">
+        <rule id="PANDEMONIA" name="Pandemonia -> Pandemona">
+            <pattern><token>pandemonia</token></pattern>
+            <short>"Pandemonia" is the plural of "Pandemonium". "Pandemona" is the FF8 summon.</short>
+            <message>The Final Fantasy 8 summon is named <suggestion>Pandemona</suggestion>. "Pandemonia" is the plural form of the word "Pandemonium" but is unlikely to ever be used in fanfiction.</message>
+        </rule>
+    </category>
+    <category name="Naruto">
+        <rule id="DOPE" name="Dope -> Dobe">
+            <pattern><token>dope</token></pattern>
+            <message>Uchiha Sasuke calls Naruto <suggestion>dobe</suggestion> (slang for <suggestion>idiot</suggestion> or <suggestion>dead last</suggestion>), not 'dope'.</message>
+            <example type="incorrect">The <marker>dope</marker> just got lucky.</example>
+            <example type="correct">The <marker>dobe</marker> just got lucky.</example>
+            <example type="correct">The <marker>idiot</marker> just got lucky.</example>
+            <example type="correct">The <marker>dead last</marker> just got lucky.</example>
+            <example type="incorrect">"Hah! Make me, <marker>dope</marker>.</example>
+            <example type="correct">"Hah! Make me, <marker>dead last</marker>.</example>
+        </rule>
+        <rule id="ICHIRAKU" name="Misspellings of 'Ichiraku'">
+            <pattern><token regexp="yes">Ichiriku|Ichirika</token></pattern>
+            <message>Naruto eats ramen at <suggestion>Ichiraku</suggestion>'s whenever he can.</message>
+        </rule>
+        <rule id="OROCHIMERU" name="Orochimeru -> Orochimaru">
+            <pattern><token>Orochimeru</token></pattern>
+            <message><suggestion>Orochimaru</suggestion> is an S-class missing nin with a thing for snakes.</message>
+        </rule>
+    </category>
+    <category name="Neon Genesis Evangelion">
+        <rule id="FUYUTUKI" name="Fuyutuki">
+            <pattern><token>Fuyutuki</token></pattern>
+            <message>Did you mean <suggestion>Fuyutsuki</suggestion>?</message>
+        </rule>
+        <rule id="KOWARU" name="Kaoru/Kowaru Nagisa" default="off">
+            <!-- Off by default since characters in other series are named "Kaoru". -->
+            <pattern><token regexp="yes">Kaoru|Kowaru</token></pattern>
+            <message>Did you mean <suggestion>Kaworu</suggestion>?</message>
+            <example type="incorrect"><marker>Kowaru</marker> Nagisa is the Fifth Child.</example>
+            <example type="correct"><marker>Kaworu</marker> Nagisa is the Fifth Child.</example>
+        </rule>
+        <rule id="NIGESA" name="Kaworu Nigesa">
+            <pattern><token>Nigesa</token></pattern>
+            <message>Did you mean <suggestion>Nagisa</suggestion>?</message>
+            <example type="incorrect">Kaworu <marker>Nigesa</marker> is the Fifth Child.</example>
+            <example type="correct">Kaworu <marker>Nagisa</marker> is the Fifth Child.</example>
+        </rule>
+    </category>
+    <category name="Noir">
+        <rule id="ARTENA" name="Arutena/Artena -> Altena">
+            <pattern><token regexp="yes">Arutena|Artena</token></pattern>
+            <short>Did you mean 'Altena'?</short>
+            <message>According to the official Noir translations, 'Arutena' is an artifact of the Japanese writing system and the character's real name is <suggestion>Altena</suggestion>.</message>
+            <example type="correct"><marker>Altena</marker> is a member of Les Soldats.</example>
+        </rule>
+    </category>
+    <category name="Pokémon">
+        <rule id="POKEMONS" name="Use of 's' to pluralize 'saiyajin'">
+            <pattern><token regexp="yes">pokemons|pokémons</token></pattern>
+            <short>Use of 's' to pluralize Japanese loanword.</short>
+            <message>In normal use, most Japanese words are both singular and plural. This property is usually preserved when they are borrowed for English use and <suggestion>pokémon</suggestion> should be used instead.</message>
+            <example type="incorrect">Let me show you my <marker>pokemons</marker>!</example>
+            <example type="correct">Let me show you my <marker>pokémon</marker>!</example>
+        </rule>
+        <rule id="POKEMON" name="Unaccented 'e' in Pokémon">
+            <pattern><token>pokemon</token></pattern>
+            <short>Unaccented 'e' in Pokémon.</short>
+            <message>To make the Japanese-derived pronunciation more clear, the official romanization for <suggestion>pokémon</suggestion> uses a French-style 'accent aigu' on the 'e'.</message>
+        </rule>
+    </category>
+    <category name="Ranma ½">
+        <rule id="NERMIA" name="Nermia">
+            <pattern><token>Nermia</token></pattern>
+            <short>Possible typo</short>
+            <message>Rumiko Takahashi's works take place in the <suggestion>Nerima</suggestion> ward of Tokyo.</message>
+            <example type="incorrect">The <marker>Nermia</marker> Wrecking Crew</example>
+            <example type="correct">The <marker>Nerima</marker> Wrecking Crew</example>
+        </rule>
+        <!-- TODO: Moose -> Mousse -->
+        <rule id="CHINE" name="Chine">
+            <pattern><token>Chine</token></pattern>
+            <short>Possible typo</short>
+            <message>Did you mean <suggestion>China</suggestion> or <suggestion>Shine</suggestion>?</message>
+            <example type="incorrect">Off to <marker>Chine</marker>!</example>
+            <example type="correct">Off to <marker>China</marker>!</example>
+        </rule>
+        <rule id="NADOKA" name="Nadoka">
+            <pattern><token>Nadoka</token></pattern>
+            <short>Possible typo</short>
+            <message>Did you mean <suggestion>Nodoka</suggestion>?</message>
+            <example type="incorrect">Saotome <marker>Nadoka</marker> is Ranma's mother.</example>
+            <example type="correct">Saotome <marker>Nodoka</marker> is Ranma's mother.</example>
+        </rule>
+        <rule id="RANAM_RAMAN" name="Ranam/Raman">
+            <pattern><token regexp="yes">Ranam|Raman</token></pattern>
+            <short>Possible typo</short>
+            <message>Did you mean <suggestion>Ranma</suggestion> (of the Anything Goes school of martial arts) or <suggestion>Ramen</suggestion> (a noodle dish)?</message>
+            <example type="incorrect"><marker>Ranam</marker> Saotome</example>
+            <example type="incorrect"><marker>Raman</marker> Saotome</example>
+            <example type="correct"><marker>Ranma</marker> Saotome</example>
+            <example type="correct"><marker>Ramen</marker> is tasty.</example>
+        </rule>
+        <rule id="TATIWAKI" name="Tatiwaki">
+            <pattern><token>Tatiwaki</token></pattern>
+            <short>Possible typo</short>
+            <message>Did you mean <suggestion>Tatewaki</suggestion> (of the Kuno family)?</message>
+            <example type="incorrect"><marker>Tatiwaki</marker> Kuno is delusional.</example>
+            <example type="correct"><marker>Tatewaki</marker> Kuno is delusional.</example>
+        </rule>
+        <rule id="BUKAN" name="Bukan">
+            <pattern><token regexp="yes">bukan|bokan|boken|boktuo</token></pattern>
+            <short>Possible typo</short>
+            <message>Did you mean <suggestion>bokken</suggestion> (A.K.A. <suggestion>bokuto</suggestion>)? Bukan/Bokan is a city in Iran.</message>
+            <example type="incorrect">A <marker>bukan</marker> is used for training.</example>
+            <example type="incorrect">A <marker>boktuo</marker> is used for training.</example>
+            <example type="incorrect">A <marker>bokan</marker> is used for training.</example>
+            <example type="correct">A<marker>bokken</marker>, often called a <marker>bokuto</marker> in Japan, is used for training.</example>
+        </rule>
+        <!-- TODO: Kirara Tendo -> Kimiko Tendo -->
+    </category>
+    <!--
+    <category name="Unused">
+        <rulegroup default="off" id="EN_CAPITALIZE" name="Capitalize lowercase words ('i am')">
+        </rulegroup>
+    </category>-->
+    <!-- vim: foldmethod=marker foldmarker=<rule,</rule: -->
+    <category name="Star Trek">
+        <rule id="PLASMA_LEEK" name="Plasma Leek">
+            <pattern mark_from="1">
+                <token>plasma</token>
+                <token>leek</token>
+            </pattern>
+            <message>As amusing as jumbo onions made of super-ionized gas would be, I think this is a typo. You probably meant plasma <suggestion>leak</suggestion>.</message>
+            <example type="incorrect">There is a plasma <marker>leek</marker> in the engine room, captain!</example>
+            <example type="correct">There is a plasma <marker>leak</marker> in the engine room, captain!</example>
+        </rule>
+    </category>
+    <category name="Tenchi Muyo">
+        <rule id="JURIAN" name="Jurian">
+            <pattern><token>Jurian</token></pattern>
+            <message>The homeworld's name is 'Jurai', so the species name is <suggestion>Juraian</suggestion>.</message>
+            <example type="incorrect">Aeka and Sasami are <marker>Jurian</marker>.</example>
+            <example type="correct">Aeka and Sasami are <marker>Juraian</marker>.</example>
+        </rule>
+        <rule id="MASAKI_MISAKI" name="Masaki/Misaki">
+            <!-- TODO: Figure out how to also match "the Misaki" -->
+            <pattern mark_to="-1">
+                <token>Misaki</token>
+                <token regexp="yes">shrine|family|clan</token>
+            </pattern>
+            <message><suggestion>Masaki</suggestion> is Tenchi's family name. 'Misaki' is the given name of one of Emperor Azusa's wives.</message>
+            <example type="incorrect">The <marker>Misaki</marker> Shrine</example>
+            <example type="incorrect">The <marker>Misaki</marker> Family</example>
+            <example type="correct">The <marker>Masaki</marker> Shrine</example>
+            <example type="correct">The <marker>Masaki</marker> Shrine</example>
+        </rule>
+        <!-- TODO: Also need a rule for calling the emperor's wife "Masaki". -->
+        <rule id="MASAKIS" name="Masakis">
+            <pattern><token regexp="yes">Misakis|Masakis</token></pattern>
+            <message>'Masakis' can be jarring to the reader because, at first glance, the correct pronunciation seems to be "ma-SA-kiss". It is suggested that you use <suggestion>Masaki family</suggestion> or <suggestion>Masaki family members</suggestion> instead.</message>
+            <example type="incorrect">The <marker>Masakis</marker> just stared in surprise.</example>
+            <example type="correct">The <marker>Masaki family</marker> just stared in surprise.</example>
+        </rule>
+        <rule id="RYO-OH" name="Misspellings of Ryo-ohki and Ryu-oh">
+            <pattern><token regexp="yes">Ryo-oh|Ryu-ohki|Ryo-oul</token></pattern>
+            <message>Aeka's tree-ship is <suggestion>Ryu-oh</suggestion> and Ryoko's cabbit is named <suggestion>Ryo-ohki</suggestion>?</message>
+            <example type="incorrect"><marker>Ryu-ohki</marker> was too busy with her carrots to respond.</example>
+            <example type="correct"><marker>Ryo-ohki</marker> was too busy with her carrots to respond.</example>
+            <!-- TODO: Examples for Ryu-oh too. -->
+        </rule>
+    </category>
+</rules>
