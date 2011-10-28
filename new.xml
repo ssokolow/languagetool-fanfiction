@@ -1,0 +1,1874 @@
+<rules lang="en">
+  <category name="Fanfiction">
+    <!--TODO: Hand-tune this and fill in the example tags.-->
+    <rule name="Rouge" id="ROUGE">
+      <pattern><token>rouge</token></pattern>
+      <message>Did you mean <message>rogue</message>? The number of cases in which 'rouge' is actually used intentionally, rather than as a typo of 'rogue' is vanishingly small.</message>
+      <example type="incorrect"><marker>rouge</marker></example>
+      <example type="correct"><marker>rogue</marker></example>
+    </rule>
+    <rule name="Physic " id="PHYSIC_">
+      <pattern><token>physic</token></pattern>
+      <message>Did you mean <message>psychic</message>? I've never seen someone use physic instead of physical or physique, only psychic</message>
+      <example type="incorrect"><marker>physic </marker></example>
+      <example type="correct"><marker>psychic</marker></example>
+    </rule>
+    <rule name="Koalla-Su" id="KOALLA-SU">
+      <pattern><token>Koalla-su</token></pattern>
+      <message>Did you mean <message>Kaolla-su</message>? </message>
+      <example type="incorrect"><marker>Koalla-su</marker></example>
+      <example type="correct"><marker>Kaolla-su</marker></example>
+    </rule>
+    <rule name="Bokan" id="BOKAN">
+      <pattern><token>bokan</token></pattern>
+      <message>Did you mean <message>bokken</message>? </message>
+      <example type="incorrect"><marker>bokan</marker></example>
+      <example type="correct"><marker>bokken</marker></example>
+    </rule>
+    <rule name="Bokken" id="BOKKEN">
+      <pattern><token>bokken</token></pattern>
+      <message>Did you mean <message>bokuto</message>? bokken is plural</message>
+      <example type="incorrect"><marker>bokken</marker></example>
+      <example type="correct"><marker>bokuto</marker></example>
+    </rule>
+    <rule name="Bokkens" id="BOKKENS">
+      <pattern><token>bokkens</token></pattern>
+      <message>Did you mean <message>bokken</message>? bokken is plural</message>
+      <example type="incorrect"><marker>bokkens</marker></example>
+      <example type="correct"><marker>bokken</marker></example>
+    </rule>
+    <rule name="Integral" id="INTEGRAL">
+      <pattern><token>Integral</token></pattern>
+      <message>Did you mean <message>Integra</message> or <message>Integral</message>? The misspelling of "Sir Integra" as "Sir Integral" is much more common in fanfiction than "Integral"</message>
+      <example type="incorrect"><marker>Integral</marker></example>
+      <example type="correct"><marker>Integra</marker></example>
+      <example type="correct"><marker>Integral</marker></example>
+    </rule>
+    <rule name="Sensai" id="SENSAI">
+      <pattern><token>sensai</token></pattern>
+      <message>Did you mean <message>sensei</message>? </message>
+      <example type="incorrect"><marker>sensai</marker></example>
+      <example type="correct"><marker>sensei</marker></example>
+    </rule>
+    <rule name="Nekomimi" id="NEKOMIMI">
+      <pattern><token>nekomimi</token></pattern>
+      <message>Did you mean <message>nekomusume</message>? Nekomimi is specific to girls wearing FAKE cat ears and tail. I have yet to find a fanfic where the author didn't actually mean nekomusume.</message>
+      <example type="incorrect"><marker>nekomimi</marker></example>
+      <example type="correct"><marker>nekomusume</marker></example>
+    </rule>
+    <rule name="Saki" id="SAKI">
+      <pattern><token>saki</token></pattern>
+      <message>Did you mean <message>saké</message>? Japanese rice wine is "saké", not "saki".</message>
+      <example type="incorrect"><marker>saki</marker></example>
+      <example type="correct"><marker>saké</marker></example>
+    </rule>
+    <rule name="Tonto" id="TONTO">
+      <pattern><token>tonto</token></pattern>
+      <message>Did you mean <message>tanto</message>? The short dagger-like Japanese sword used when committing seppuku is called a "tanto", not a "tonto".</message>
+      <example type="incorrect"><marker>tonto</marker></example>
+      <example type="correct"><marker>tanto</marker></example>
+    </rule>
+    <rule name="Sempei" id="SEMPEI">
+      <pattern><token>sempei</token></pattern>
+      <message>Did you mean <message>sempai</message>? The suffix used for the name of someone who is your senior in an organization is pronounced sempai, and the literal translation of the Japanese spelling is "senpai".</message>
+      <example type="incorrect"><marker>sempei</marker></example>
+      <example type="correct"><marker>sempai</marker></example>
+    </rule>
+    <rule name="Tomboki" id="TOMBOKI">
+      <pattern><token>Tomboki</token></pattern>
+      <message>Did you mean <message>Tomobiki</message>? This is probably the worst misspelling I've ever seen.</message>
+      <example type="incorrect"><marker>Tomboki</marker></example>
+      <example type="correct"><marker>Tomobiki</marker></example>
+    </rule>
+    <rule name="-Samma" id="-SAMMA">
+      <pattern><token>-samma</token></pattern>
+      <message>Did you mean <message>-sama</message>? </message>
+      <example type="incorrect"><marker>-samma</marker></example>
+      <example type="correct"><marker>-sama</marker></example>
+    </rule>
+    <rule name="Ottosan" id="OTTOSAN">
+      <pattern><token>ottosan</token></pattern>
+      <message>Did you mean <message>otousan</message>? </message>
+      <example type="incorrect"><marker>ottosan</marker></example>
+      <example type="correct"><marker>otousan</marker></example>
+    </rule>
+    <rule name="Gome" id="GOME">
+      <pattern><token>gome</token></pattern>
+      <message>Did you mean <message>gomen</message>? TODO: Confirm this correction.</message>
+      <example type="incorrect"><marker>gome</marker></example>
+      <example type="correct"><marker>gomen</marker></example>
+    </rule>
+    <rule name="Henti" id="HENTI">
+      <pattern><token>henti</token></pattern>
+      <message>Did you mean <message>hentai</message>? </message>
+      <example type="incorrect"><marker>henti</marker></example>
+      <example type="correct"><marker>hentai</marker></example>
+    </rule>
+    <rule name="Shoji" id="SHOJI">
+      <pattern><token>shoji</token></pattern>
+      <message>Did you mean <message>shogi</message>? "shoji" is a traditional Japanese sliding door. "shogi" is a Japanese chess-like game.</message>
+      <example type="incorrect"><marker>shoji</marker></example>
+      <example type="correct"><marker>shogi</marker></example>
+    </rule>
+  </category>
+  <category name="General English Mistakes">
+    <!--TODO: Hand-tune this and fill in the example tags.-->
+    <rule name="Down Load" id="DOWN_LOAD">
+      <pattern><token>down</token><token>load</token></pattern>
+      <message>Did you mean <message>download</message>? Download is one word.</message>
+      <example type="incorrect"><marker>down load</marker></example>
+      <example type="correct"><marker>download</marker></example>
+    </rule>
+    <rule name="The Sight" id="THE_SIGHT">
+      <pattern><token>the</token><token>sight</token></pattern>
+      <message>Did you mean <message>the site</message> or <message>the sight</message>? 50/50 chance</message>
+      <example type="incorrect"><marker>the sight</marker></example>
+      <example type="correct"><marker>the site</marker></example>
+      <example type="correct"><marker>the sight</marker></example>
+    </rule>
+    <rule name="I Sure" id="I_SURE">
+      <pattern><token>I</token><token>sure</token></pattern>
+      <message>Did you mean <message>I'm sure</message>? </message>
+      <example type="incorrect"><marker>I sure</marker></example>
+      <example type="correct"><marker>I'm sure</marker></example>
+    </rule>
+    <rule name="He Think" id="HE_THINK">
+      <pattern><token>He</token><token>think</token></pattern>
+      <message>Did you mean <message>He thinks</message>? </message>
+      <example type="incorrect"><marker>He think</marker></example>
+      <example type="correct"><marker>He thinks</marker></example>
+    </rule>
+    <rule name="Of Item" id="OF_ITEM">
+      <pattern><token>of</token><token>item</token></pattern>
+      <message>Did you mean <message>of items</message>? </message>
+      <example type="incorrect"><marker>of item</marker></example>
+      <example type="correct"><marker>of items</marker></example>
+    </rule>
+    <rule name="A Shelve" id="A_SHELVE">
+      <pattern><token>a</token><token>shelve</token></pattern>
+      <message>Did you mean <message>a shelf</message> or <message>shelves</message>? </message>
+      <example type="incorrect"><marker>a shelve</marker></example>
+      <example type="correct"><marker>a shelf</marker></example>
+      <example type="correct"><marker>shelves</marker></example>
+    </rule>
+    <rule name="Buts" id="BUTS">
+      <pattern><token>buts</token></pattern>
+      <message>Did you mean <message>but</message> or <message>butt</message> or <message>butts</message>? </message>
+      <example type="incorrect"><marker>buts</marker></example>
+      <example type="correct"><marker>but</marker></example>
+      <example type="correct"><marker>butt</marker></example>
+      <example type="correct"><marker>butts</marker></example>
+    </rule>
+    <rule name="Going High Wire" id="GOING_HIGH_WIRE">
+      <pattern><token>going</token><token>high</token><token>wire</token></pattern>
+      <message>Did you mean <message>going haywire</message>? </message>
+      <example type="incorrect"><marker>going high wire</marker></example>
+      <example type="correct"><marker>going haywire</marker></example>
+    </rule>
+    <rule name="A Looser" id="A_LOOSER">
+      <pattern><token>a</token><token>looser</token></pattern>
+      <message>Did you mean <message>a loser</message>? </message>
+      <example type="incorrect"><marker>a looser</marker></example>
+      <example type="correct"><marker>a loser</marker></example>
+    </rule>
+    <rule name="Will Loose" id="WILL_LOOSE">
+      <pattern><token>will</token><token>loose</token></pattern>
+      <message>Did you mean <message>will lose</message>? </message>
+      <example type="incorrect"><marker>will loose</marker></example>
+      <example type="correct"><marker>will lose</marker></example>
+    </rule>
+    <rule name="Looses" id="LOOSES">
+      <pattern><token>looses</token></pattern>
+      <message>Did you mean <message>loses</message>? </message>
+      <example type="incorrect"><marker>looses</marker></example>
+      <example type="correct"><marker>loses</marker></example>
+    </rule>
+    <rule name="Weighted West" id="WEIGHTED_WEST">
+      <pattern><token>weighted</token><token>west</token></pattern>
+      <message>Did you mean <message>weighted vest</message>? </message>
+      <example type="incorrect"><marker>weighted west</marker></example>
+      <example type="correct"><marker>weighted vest</marker></example>
+    </rule>
+    <rule name="To Loose" id="TO_LOOSE">
+      <pattern><token>to</token><token>loose</token></pattern>
+      <message>Did you mean <message>too loose</message> or <message>to lose</message>? </message>
+      <example type="incorrect"><marker>to loose</marker></example>
+      <example type="correct"><marker>too loose</marker></example>
+      <example type="correct"><marker>to lose</marker></example>
+    </rule>
+    <rule name="Wooded Leg" id="WOODED_LEG">
+      <pattern><token>wooded</token><token>leg</token></pattern>
+      <message>Did you mean <message>wooden leg</message>? </message>
+      <example type="incorrect"><marker>wooded leg</marker></example>
+      <example type="correct"><marker>wooden leg</marker></example>
+    </rule>
+    <rule name="He R" id="HE_R">
+      <pattern><token>he</token><token>r</token></pattern>
+      <message>Did you mean <message>her</message>? </message>
+      <example type="incorrect"><marker>he r</marker></example>
+      <example type="correct"><marker>her</marker></example>
+    </rule>
+    <rule name="All To Often" id="ALL_TO_OFTEN">
+      <pattern><token>all</token><token>to</token><token>often</token></pattern>
+      <message>Did you mean <message>all too often</message>? </message>
+      <example type="incorrect"><marker>all to often</marker></example>
+      <example type="correct"><marker>all too often</marker></example>
+    </rule>
+    <rule name="Aunty" id="AUNTY">
+      <pattern><token>Aunty</token></pattern>
+      <message>Did you mean <message>Auntie</message>? </message>
+      <example type="incorrect"><marker>Aunty</marker></example>
+      <example type="correct"><marker>Auntie</marker></example>
+    </rule>
+    <rule name="To Skilled" id="TO_SKILLED">
+      <pattern><token>to</token><token>skilled</token></pattern>
+      <message>Did you mean <message>too skilled</message>? </message>
+      <example type="incorrect"><marker>to skilled</marker></example>
+      <example type="correct"><marker>too skilled</marker></example>
+    </rule>
+    <rule name="To Well" id="TO_WELL">
+      <pattern><token>to</token><token>well</token></pattern>
+      <message>Did you mean <message>too well</message>? </message>
+      <example type="incorrect"><marker>to well</marker></example>
+      <example type="correct"><marker>too well</marker></example>
+    </rule>
+    <rule name="Welsh" id="WELSH">
+      <pattern><token>welsh</token></pattern>
+      <message>Did you mean <message>welch</message>? welsh is a valid nationality, but people usually mean "welch" (to break one's word or avoid payment) which "welsh" can also mean, but only the dictionary remembers that.</message>
+      <example type="incorrect"><marker>welsh</marker></example>
+      <example type="correct"><marker>welch</marker></example>
+    </rule>
+    <rule name="Bats Wings" id="BATS_WINGS">
+      <pattern><token>bats</token><token>wings</token></pattern>
+      <message>Did you mean <message>bat wings</message> or <message>bats' wings</message> or <message>bat's wings</message>? </message>
+      <example type="incorrect"><marker>bats wings</marker></example>
+      <example type="correct"><marker>bat wings</marker></example>
+      <example type="correct"><marker>bats' wings</marker></example>
+      <example type="correct"><marker>bat's wings</marker></example>
+    </rule>
+    <rule name="Dispair" id="DISPAIR">
+      <pattern><token>dispair</token></pattern>
+      <message>Did you mean <message>despair</message>? </message>
+      <example type="incorrect"><marker>dispair</marker></example>
+      <example type="correct"><marker>despair</marker></example>
+    </rule>
+    <rule name="Took Of" id="TOOK_OF">
+      <pattern><token>took</token><token>of</token></pattern>
+      <message>Did you mean <message>took off</message>? </message>
+      <example type="incorrect"><marker>took of</marker></example>
+      <example type="correct"><marker>took off</marker></example>
+    </rule>
+    <rule name="Shrug It Of" id="SHRUG_IT_OF">
+      <pattern><token>shrug</token><token>it</token><token>of</token></pattern>
+      <message>Did you mean <message>shrug it off</message>? </message>
+      <example type="incorrect"><marker>shrug it of</marker></example>
+      <example type="correct"><marker>shrug it off</marker></example>
+    </rule>
+    <rule name="Filled Life" id="FILLED_LIFE">
+      <pattern><token>filled</token><token>life</token></pattern>
+      <message>Did you mean <message>-filled life</message>? </message>
+      <example type="incorrect"><marker>filled life</marker></example>
+      <example type="correct"><marker>-filled life</marker></example>
+    </rule>
+    <rule name="Filled Day" id="FILLED_DAY">
+      <pattern><token>filled</token><token>day</token></pattern>
+      <message>Did you mean <message>-filled day</message>? </message>
+      <example type="incorrect"><marker>filled day</marker></example>
+      <example type="correct"><marker>-filled day</marker></example>
+    </rule>
+    <rule name="Pointed To Wear" id="POINTED_TO_WEAR">
+      <pattern><token>pointed</token><token>to</token><token>wear</token></pattern>
+      <message>Did you mean <message>pointed to where</message>? </message>
+      <example type="incorrect"><marker>pointed to wear</marker></example>
+      <example type="correct"><marker>pointed to where</marker></example>
+    </rule>
+    <rule name="Hansom" id="HANSOM">
+      <pattern><token>hansom</token></pattern>
+      <message>Did you mean <message>handsome</message>? </message>
+      <example type="incorrect"><marker>hansom</marker></example>
+      <example type="correct"><marker>handsome</marker></example>
+    </rule>
+    <rule name="Said Her Peace" id="SAID_HER_PEACE">
+      <pattern><token>said</token><token>her</token><token>peace</token></pattern>
+      <message>Did you mean <message>said her piece</message>? </message>
+      <example type="incorrect"><marker>said her peace</marker></example>
+      <example type="correct"><marker>said her piece</marker></example>
+    </rule>
+    <rule name="Said His Peace" id="SAID_HIS_PEACE">
+      <pattern><token>said</token><token>his</token><token>peace</token></pattern>
+      <message>Did you mean <message>said his piece</message>? </message>
+      <example type="incorrect"><marker>said his peace</marker></example>
+      <example type="correct"><marker>said his piece</marker></example>
+    </rule>
+    <rule name="The Subjective" id="THE_SUBJECTIVE">
+      <pattern><token>the</token><token>subjective</token></pattern>
+      <message>Did you mean <message>the subject</message>? </message>
+      <example type="incorrect"><marker>the subjective</marker></example>
+      <example type="correct"><marker>the subject</marker></example>
+    </rule>
+    <rule name="A The" id="A_THE">
+      <pattern><token>a</token><token>the</token></pattern>
+      <message>Did you mean <message>the</message> or <message>a</message>? </message>
+      <example type="incorrect"><marker>a the</marker></example>
+      <example type="correct"><marker>the</marker></example>
+      <example type="correct"><marker>a</marker></example>
+    </rule>
+    <rule name="The A" id="THE_A">
+      <pattern><token>the</token><token>a</token></pattern>
+      <message>Did you mean <message>a</message> or <message>the</message> or <message>the "A"</message>? </message>
+      <example type="incorrect"><marker>the a</marker></example>
+      <example type="correct"><marker>a</marker></example>
+      <example type="correct"><marker>the</marker></example>
+      <example type="correct"><marker>the "A"</marker></example>
+    </rule>
+    <rule name="The More The Marrier" id="THE_MORE_THE_MARRIER">
+      <pattern><token>the</token><token>more</token><token>the</token><token>marrier</token></pattern>
+      <message>Did you mean <message>the more, the merrier</message>? </message>
+      <example type="incorrect"><marker>the more the marrier</marker></example>
+      <example type="correct"><marker>the more, the merrier</marker></example>
+    </rule>
+    <rule name="The Mail Post" id="THE_MAIL_POST">
+      <pattern><token>the</token><token>mail</token><token>post</token></pattern>
+      <message>Did you mean <message>the post</message> or <message>the mail</message> or <message>the mailbox</message> or <message>the postbox</message>? </message>
+      <example type="incorrect"><marker>the mail post</marker></example>
+      <example type="correct"><marker>the post</marker></example>
+      <example type="correct"><marker>the mail</marker></example>
+      <example type="correct"><marker>the mailbox</marker></example>
+      <example type="correct"><marker>the postbox</marker></example>
+    </rule>
+    <rule name="Tripped Planned" id="TRIPPED_PLANNED">
+      <pattern><token>tripped</token><token>planned</token></pattern>
+      <message>Did you mean <message>trip planned</message>? </message>
+      <example type="incorrect"><marker>tripped planned</marker></example>
+      <example type="correct"><marker>trip planned</marker></example>
+    </rule>
+    <rule name="Repaired To" id="REPAIRED_TO">
+      <pattern><token>repaired</token><token>to</token></pattern>
+      <message>Did you mean <message>retired to</message>? "repaired to" is a valid fragment, but very uncommon as the correct thing to use</message>
+      <example type="incorrect"><marker>repaired to</marker></example>
+      <example type="correct"><marker>retired to</marker></example>
+    </rule>
+    <rule name="That Thought It" id="THAT_THOUGHT_IT">
+      <pattern><token>That</token><token>thought</token><token>it</token></pattern>
+      <message>Did you mean <message>&lt;pronoun&gt; thought it</message> or <message>"that thought, it"</message>? </message>
+      <example type="incorrect"><marker>That thought it</marker></example>
+      <example type="correct"><marker>&lt;pronoun&gt; thought it</marker></example>
+      <example type="correct"><marker>"that thought, it"</marker></example>
+    </rule>
+    <rule name="Ones Rocks" id="ONES_ROCKS">
+      <pattern><token>ones</token><token>rocks</token></pattern>
+      <message>Did you mean <message>one's rock</message> or <message>one rocks</message>? </message>
+      <example type="incorrect"><marker>ones rocks</marker></example>
+      <example type="correct"><marker>one's rock</marker></example>
+      <example type="correct"><marker>one rocks</marker></example>
+    </rule>
+    <rule name="Some One" id="SOME_ONE">
+      <pattern><token>some</token><token>one</token></pattern>
+      <message>Did you mean <message>someone</message>? </message>
+      <example type="incorrect"><marker>some one</marker></example>
+      <example type="correct"><marker>someone</marker></example>
+    </rule>
+    <rule name="Costumer" id="COSTUMER">
+      <pattern><token>costumer</token></pattern>
+      <message>Did you mean <message>customer</message>? </message>
+      <example type="incorrect"><marker>costumer</marker></example>
+      <example type="correct"><marker>customer</marker></example>
+    </rule>
+    <rule name="Thank, &lt;Name&gt;" id="THANK___NAME_">
+      <pattern><token>Thank,</token><token>&lt;name&gt;</token></pattern>
+      <message>Did you mean <message>Thanks, &lt;name&gt;</message> or <message>Thank &lt;name&gt;</message>? </message>
+      <example type="incorrect"><marker>Thank, &lt;name&gt;</marker></example>
+      <example type="correct"><marker>Thanks, &lt;name&gt;</marker></example>
+      <example type="correct"><marker>Thank &lt;name&gt;</marker></example>
+    </rule>
+    <rule name="Your Sent" id="YOUR_SENT">
+      <pattern><token>your</token><token>sent</token></pattern>
+      <message>Did you mean <message>your scent</message> or <message>you sent</message>? </message>
+      <example type="incorrect"><marker>your sent</marker></example>
+      <example type="correct"><marker>your scent</marker></example>
+      <example type="correct"><marker>you sent</marker></example>
+    </rule>
+    <rule name="To Collage" id="TO_COLLAGE">
+      <pattern><token>to</token><token>collage</token></pattern>
+      <message>Did you mean <message>to college</message>? A "college" is an institute of higher learning. A "collage" is is a picture made of smaller pictures.</message>
+      <example type="incorrect"><marker>to collage</marker></example>
+      <example type="correct"><marker>to college</marker></example>
+    </rule>
+    <rule name="A Near By" id="A_NEAR_BY">
+      <pattern><token>a</token><token>near</token><token>by</token></pattern>
+      <message>Did you mean <message>a nearby</message>? </message>
+      <example type="incorrect"><marker>a near by</marker></example>
+      <example type="correct"><marker>a nearby</marker></example>
+    </rule>
+    <rule name="The Near By" id="THE_NEAR_BY">
+      <pattern><token>the</token><token>near</token><token>by</token></pattern>
+      <message>Did you mean <message>the nearby</message>? </message>
+      <example type="incorrect"><marker>the near by</marker></example>
+      <example type="correct"><marker>the nearby</marker></example>
+    </rule>
+    <rule name="Did Get That Either" id="DID_GET_THAT_EITHER">
+      <pattern><token>did</token><token>get</token><token>that</token><token>either</token></pattern>
+      <message>Did you mean <message>didn't get that either</message>? </message>
+      <example type="incorrect"><marker>did get that either</marker></example>
+      <example type="correct"><marker>didn't get that either</marker></example>
+    </rule>
+    <rule name="Guessing Work" id="GUESSING_WORK">
+      <pattern><token>guessing</token><token>work</token></pattern>
+      <message>Did you mean <message>guesswork</message>? </message>
+      <example type="incorrect"><marker>guessing work</marker></example>
+      <example type="correct"><marker>guesswork</marker></example>
+    </rule>
+    <rule name="Cry-Baby" id="CRY-BABY">
+      <pattern><token>cry-baby</token></pattern>
+      <message>Did you mean <message>crybaby</message>? </message>
+      <example type="incorrect"><marker>cry-baby</marker></example>
+      <example type="correct"><marker>crybaby</marker></example>
+    </rule>
+    <rule name="No Biggy" id="NO_BIGGY">
+      <pattern><token>no</token><token>biggy</token></pattern>
+      <message>Did you mean <message>no biggie</message>? </message>
+      <example type="incorrect"><marker>no biggy</marker></example>
+      <example type="correct"><marker>no biggie</marker></example>
+    </rule>
+    <rule name="Basterd" id="BASTERD">
+      <pattern><token>basterd</token></pattern>
+      <message>Did you mean <message>bastard</message>? </message>
+      <example type="incorrect"><marker>basterd</marker></example>
+      <example type="correct"><marker>bastard</marker></example>
+    </rule>
+    <rule name="Bastered" id="BASTERED">
+      <pattern><token>bastered</token></pattern>
+      <message>Did you mean <message>bastard</message>? The only way this correction could be wrong is if your story is weird enough to make baster (eg. "Turkey Baster". The giant syringe you use when cooking a turkey) into an impromptu verb.</message>
+      <example type="incorrect"><marker>bastered</marker></example>
+      <example type="correct"><marker>bastard</marker></example>
+    </rule>
+    <rule name="Would Of" id="WOULD_OF">
+      <pattern><token>would</token><token>of</token></pattern>
+      <message>Did you mean <message>would have</message>? </message>
+      <example type="incorrect"><marker>would of</marker></example>
+      <example type="correct"><marker>would have</marker></example>
+    </rule>
+    <rule name="Bored Of" id="BORED_OF">
+      <pattern><token>bored</token><token>of</token></pattern>
+      <message>Did you mean <message>bored with</message>? </message>
+      <example type="incorrect"><marker>bored of</marker></example>
+      <example type="correct"><marker>bored with</marker></example>
+    </rule>
+    <rule name="Way To Young" id="WAY_TO_YOUNG">
+      <pattern><token>way</token><token>to</token><token>young</token></pattern>
+      <message>Did you mean <message>way too young</message>? </message>
+      <example type="incorrect"><marker>way to young</marker></example>
+      <example type="correct"><marker>way too young</marker></example>
+    </rule>
+    <rule name="Apposing" id="APPOSING">
+      <pattern><token>apposing</token></pattern>
+      <message>Did you mean <message>opposing</message>? apposing is a valid word, but I've never seen it in use. However, I've seen several cases where someone used it when they intended to use "opposing".</message>
+      <example type="incorrect"><marker>apposing</marker></example>
+      <example type="correct"><marker>opposing</marker></example>
+    </rule>
+    <rule name="Ying-Yang" id="YING-YANG">
+      <pattern><token>ying-yang</token></pattern>
+      <message>Did you mean <message>yin-yang</message>? The proper spelling, as transliterated from the Chinese pronounciation, is yin-yang. Also, though nobody will understand what you mean, the proper term for the symbol (yin-yang is the concept) is "The Taijitu".</message>
+      <example type="incorrect"><marker>ying-yang</marker></example>
+      <example type="correct"><marker>yin-yang</marker></example>
+    </rule>
+    <rule name="Appetite Of" id="APPETITE_OF">
+      <pattern><token>appetite</token><token>of</token></pattern>
+      <message>Did you mean <message>appetite for</message>? </message>
+      <example type="incorrect"><marker>appetite of</marker></example>
+      <example type="correct"><marker>appetite for</marker></example>
+    </rule>
+    <rule name="Your Late" id="YOUR_LATE">
+      <pattern><token>your</token><token>late</token></pattern>
+      <message>Did you mean <message>you're late</message> or <message>your latté</message>? </message>
+      <example type="incorrect"><marker>your late</marker></example>
+      <example type="correct"><marker>you're late</marker></example>
+      <example type="correct"><marker>your latté</marker></example>
+    </rule>
+    <rule name="Apart Of" id="APART_OF">
+      <pattern><token>apart</token><token>of</token></pattern>
+      <message>Did you mean <message>a part of</message> or <message>apart from</message>? </message>
+      <example type="incorrect"><marker>apart of</marker></example>
+      <example type="correct"><marker>a part of</marker></example>
+      <example type="correct"><marker>apart from</marker></example>
+    </rule>
+    <rule name="Effected" id="EFFECTED">
+      <pattern><token>effected</token></pattern>
+      <message>Did you mean <message>affected</message>? It seems far more common to find affected used incorrectly than correctly. I'll have to gather some statistics to test this hypothesis.</message>
+      <example type="incorrect"><marker>effected</marker></example>
+      <example type="correct"><marker>affected</marker></example>
+    </rule>
+    <rule name="This Rout" id="THIS_ROUT">
+      <pattern><token>this</token><token>rout</token></pattern>
+      <message>Did you mean <message>this route</message>? </message>
+      <example type="incorrect"><marker>this rout</marker></example>
+      <example type="correct"><marker>this route</marker></example>
+    </rule>
+    <rule name="You'Re Books" id="YOU_RE_BOOKS">
+      <pattern><token>you're</token><token>books</token></pattern>
+      <message>Did you mean <message>your books</message>? </message>
+      <example type="incorrect"><marker>you're books</marker></example>
+      <example type="correct"><marker>your books</marker></example>
+    </rule>
+    <rule name="Loose (Your|His|Her) Head" id="LOOSE__YOUR_HIS_HER__HEAD">
+      <pattern><token>loose</token><token>(your|his|her)</token><token>head</token></pattern>
+      <message>Did you mean <message>lose \1 head</message>? </message>
+      <example type="incorrect"><marker>loose (your|his|her) head</marker></example>
+      <example type="correct"><marker>lose \1 head</marker></example>
+    </rule>
+    <rule name="Holding A Bowel" id="HOLDING_A_BOWEL">
+      <pattern><token>holding</token><token>a</token><token>bowel</token></pattern>
+      <message>Did you mean <message>holding a bowl</message>? </message>
+      <example type="incorrect"><marker>holding a bowel</marker></example>
+      <example type="correct"><marker>holding a bowl</marker></example>
+    </rule>
+    <rule name="Fool-Hearty" id="FOOL-HEARTY">
+      <pattern><token>fool-hearty</token></pattern>
+      <message>Did you mean <message>foolhardy</message>? </message>
+      <example type="incorrect"><marker>fool-hearty</marker></example>
+      <example type="correct"><marker>foolhardy</marker></example>
+    </rule>
+    <rule name="The Crucio Curse" id="THE_CRUCIO_CURSE">
+      <pattern><token>the</token><token>crucio</token><token>curse</token></pattern>
+      <message>Did you mean <message>the cruciatus curse</message>? </message>
+      <example type="incorrect"><marker>the crucio curse</marker></example>
+      <example type="correct"><marker>the cruciatus curse</marker></example>
+    </rule>
+    <rule name="Head Master" id="HEAD_MASTER">
+      <pattern><token>head</token><token>master</token></pattern>
+      <message>Did you mean <message>headmaster</message>? </message>
+      <example type="incorrect"><marker>head master</marker></example>
+      <example type="correct"><marker>headmaster</marker></example>
+    </rule>
+    <rule name="To Far" id="TO_FAR">
+      <pattern><token>to</token><token>far</token></pattern>
+      <message>Did you mean <message>too far</message>? </message>
+      <example type="incorrect"><marker>to far</marker></example>
+      <example type="correct"><marker>too far</marker></example>
+    </rule>
+    <rule name="Your Idle" id="YOUR_IDLE">
+      <pattern><token>your</token><token>idle</token></pattern>
+      <message>Did you mean <message>your idol</message>? </message>
+      <example type="incorrect"><marker>your idle</marker></example>
+      <example type="correct"><marker>your idol</marker></example>
+    </rule>
+    <rule name="Chocked" id="CHOCKED">
+      <pattern><token>chocked</token></pattern>
+      <message>Did you mean <message>choked</message>? I think "chocked" is a valid word (TODO: Confirm) but I've only ever seen it as a check-proof typo when the author intended to use "choked"</message>
+      <example type="incorrect"><marker>chocked</marker></example>
+      <example type="correct"><marker>choked</marker></example>
+    </rule>
+    <rule name="Cannon Fodders" id="CANNON_FODDERS">
+      <pattern><token>cannon</token><token>fodders</token></pattern>
+      <message>Did you mean <message>cannon fodder</message>? "cannon fodder" is already plural.</message>
+      <example type="incorrect"><marker>cannon fodders</marker></example>
+      <example type="correct"><marker>cannon fodder</marker></example>
+    </rule>
+    <rule name="Jell" id="JELL">
+      <pattern><token>jell</token></pattern>
+      <message>Did you mean <message>gel</message>? </message>
+      <example type="incorrect"><marker>jell</marker></example>
+      <example type="correct"><marker>gel</marker></example>
+    </rule>
+    <rule name="The After Math" id="THE_AFTER_MATH">
+      <pattern><token>the</token><token>after</token><token>math</token></pattern>
+      <message>Did you mean <message>the aftermath</message>? </message>
+      <example type="incorrect"><marker>the after math</marker></example>
+      <example type="correct"><marker>the aftermath</marker></example>
+    </rule>
+    <rule name="Homicidal" id="HOMICIDAL">
+      <pattern><token>homicidal</token></pattern>
+      <message>Did you mean <message>homocidal</message>? </message>
+      <example type="incorrect"><marker>homicidal</marker></example>
+      <example type="correct"><marker>homocidal</marker></example>
+    </rule>
+    <rule name="Sore Looser" id="SORE_LOOSER">
+      <pattern><token>sore</token><token>looser</token></pattern>
+      <message>Did you mean <message>sore loser</message>? "looser" means "less tight". You are thinking of "loser".</message>
+      <example type="incorrect"><marker>sore looser</marker></example>
+      <example type="correct"><marker>sore loser</marker></example>
+    </rule>
+    <rule name="Asberger" id="ASBERGER">
+      <pattern><token>Asberger</token></pattern>
+      <message>Did you mean <message>Asperger</message>? The syndrome is named after the guy who defined it, oddly as the spelling may seem to you.</message>
+      <example type="incorrect"><marker>Asberger</marker></example>
+      <example type="correct"><marker>Asperger</marker></example>
+    </rule>
+    <rule name="Guinny" id="GUINNY">
+      <pattern><token>guinny</token></pattern>
+      <message>Did you mean <message>guinea</message>? </message>
+      <example type="incorrect"><marker>guinny</marker></example>
+      <example type="correct"><marker>guinea</marker></example>
+    </rule>
+    <rule name="Guiny" id="GUINY">
+      <pattern><token>guiny</token></pattern>
+      <message>Did you mean <message>guinea</message>? </message>
+      <example type="incorrect"><marker>guiny</marker></example>
+      <example type="correct"><marker>guinea</marker></example>
+    </rule>
+    <rule name="Got Board" id="GOT_BOARD">
+      <pattern><token>got</token><token>board</token></pattern>
+      <message>Did you mean <message>got bored</message>? </message>
+      <example type="incorrect"><marker>got board</marker></example>
+      <example type="correct"><marker>got bored</marker></example>
+    </rule>
+    <rule name="Dowrey" id="DOWREY">
+      <pattern><token>dowrey</token></pattern>
+      <message>Did you mean <message>dowry</message>? </message>
+      <example type="incorrect"><marker>dowrey</marker></example>
+      <example type="correct"><marker>dowry</marker></example>
+    </rule>
+    <rule name="Pealing Potatoes" id="PEALING_POTATOES">
+      <pattern><token>pealing</token><token>potatoes</token></pattern>
+      <message>Did you mean <message>peeling potatoes</message>? "pealing" is what a bell does. "peeling" is what you do to potatoes.</message>
+      <example type="incorrect"><marker>pealing potatoes</marker></example>
+      <example type="correct"><marker>peeling potatoes</marker></example>
+    </rule>
+    <rule name="Figure Print" id="FIGURE_PRINT">
+      <pattern><token>figure</token><token>print</token></pattern>
+      <message>Did you mean <message>fingerprint</message>? </message>
+      <example type="incorrect"><marker>figure print</marker></example>
+      <example type="correct"><marker>fingerprint</marker></example>
+    </rule>
+    <rule name="Never Losses Its" id="NEVER_LOSSES_ITS">
+      <pattern><token>never</token><token>losses</token><token>its</token></pattern>
+      <message>Did you mean <message>never loses its</message>? "losses" is the plural of "loss". The &lt;TODO: term&gt; of "lose" is "loses"</message>
+      <example type="incorrect"><marker>never losses its</marker></example>
+      <example type="correct"><marker>never loses its</marker></example>
+    </rule>
+    <rule name="Reek On" id="REEK_ON">
+      <pattern><token>reek</token><token>on</token></pattern>
+      <message>Did you mean <message>the</message>? wreak on the	You "reek" when you don't bathe. You "wreak" havoc or destruction.</message>
+      <example type="incorrect"><marker>reek on</marker></example>
+      <example type="correct"><marker>the</marker></example>
+    </rule>
+    <rule name="Way To Primitive" id="WAY_TO_PRIMITIVE">
+      <pattern><token>way</token><token>to</token><token>primitive</token></pattern>
+      <message>Did you mean <message>way too primitive</message>? </message>
+      <example type="incorrect"><marker>way to primitive</marker></example>
+      <example type="correct"><marker>way too primitive</marker></example>
+    </rule>
+    <rule name="Banzai Tree" id="BANZAI_TREE">
+      <pattern><token>banzai</token><token>tree</token></pattern>
+      <message>Did you mean <message>bonsai tree</message>? </message>
+      <example type="incorrect"><marker>banzai tree</marker></example>
+      <example type="correct"><marker>bonsai tree</marker></example>
+    </rule>
+    <rule name="Coarse Of Act" id="COARSE_OF_ACT">
+      <pattern><token>coarse</token><token>of</token><token>act</token></pattern>
+      <message>Did you mean <message>course of action</message>? </message>
+      <example type="incorrect"><marker>coarse of act</marker></example>
+      <example type="correct"><marker>course of action</marker></example>
+    </rule>
+    <rule name="Ruff Time" id="RUFF_TIME">
+      <pattern><token>ruff</token><token>time</token></pattern>
+      <message>Did you mean <message>rough time</message>? </message>
+      <example type="incorrect"><marker>ruff time</marker></example>
+      <example type="correct"><marker>rough time</marker></example>
+    </rule>
+    <rule name="The Entire Ally" id="THE_ENTIRE_ALLY">
+      <pattern><token>the</token><token>entire</token><token>ally</token></pattern>
+      <message>Did you mean <message>the entire alley</message>? </message>
+      <example type="incorrect"><marker>the entire ally</marker></example>
+      <example type="correct"><marker>the entire alley</marker></example>
+    </rule>
+    <rule name="St. Hebeke" id="ST__HEBEKE">
+      <pattern><token>St.</token><token>Hebeke</token></pattern>
+      <message>Did you mean <message>St. Hebereke</message>? </message>
+      <example type="incorrect"><marker>St. Hebeke</marker></example>
+      <example type="correct"><marker>St. Hebereke</marker></example>
+    </rule>
+    <rule name="Rapt Up In" id="RAPT_UP_IN">
+      <pattern><token>rapt</token><token>up</token><token>in</token></pattern>
+      <message>Did you mean <message>wrapped up in</message>? </message>
+      <example type="incorrect"><marker>rapt up in</marker></example>
+      <example type="correct"><marker>wrapped up in</marker></example>
+    </rule>
+    <rule name="Strong As Steal" id="STRONG_AS_STEAL">
+      <pattern><token>strong</token><token>as</token><token>steal</token></pattern>
+      <message>Did you mean <message>strong as steel</message>? </message>
+      <example type="incorrect"><marker>strong as steal</marker></example>
+      <example type="correct"><marker>strong as steel</marker></example>
+    </rule>
+    <rule name="I Shutter To Think" id="I_SHUTTER_TO_THINK">
+      <pattern><token>I</token><token>shutter</token><token>to</token><token>think</token></pattern>
+      <message>Did you mean <message>I shudder to think</message>? </message>
+      <example type="incorrect"><marker>I shutter to think</marker></example>
+      <example type="correct"><marker>I shudder to think</marker></example>
+    </rule>
+    <rule name="Tit-Bits" id="TIT-BITS">
+      <pattern><token>tit-bits</token></pattern>
+      <message>Did you mean <message>tidbits</message>? </message>
+      <example type="incorrect"><marker>tit-bits</marker></example>
+      <example type="correct"><marker>tidbits</marker></example>
+    </rule>
+    <rule name="Incase" id="INCASE">
+      <pattern><token>incase</token></pattern>
+      <message>Did you mean <message>in case</message>? </message>
+      <example type="incorrect"><marker>incase</marker></example>
+      <example type="correct"><marker>in case</marker></example>
+    </rule>
+    <rule name="Fainted To The Side" id="FAINTED_TO_THE_SIDE">
+      <pattern><token>fainted</token><token>to</token><token>the</token><token>side</token></pattern>
+      <message>Did you mean <message>feinted to the side</message>? To "faint" is to lose consciousness. To "feint" is to fake an action to deceive your opponent.</message>
+      <example type="incorrect"><marker>fainted to the side</marker></example>
+      <example type="correct"><marker>feinted to the side</marker></example>
+    </rule>
+    <rule name="On A Side Not" id="ON_A_SIDE_NOT">
+      <pattern><token>On</token><token>a</token><token>side</token><token>not</token></pattern>
+      <message>Did you mean <message>On a side note</message>? </message>
+      <example type="incorrect"><marker>On a side not</marker></example>
+      <example type="correct"><marker>On a side note</marker></example>
+    </rule>
+    <rule name="Moral Was Deteriorating" id="MORAL_WAS_DETERIORATING">
+      <pattern><token>moral</token><token>was</token><token>deteriorating</token></pattern>
+      <message>Did you mean <message>morale was deteriorating</message> or <message>morals were deteriorating</message>? </message>
+      <example type="incorrect"><marker>moral was deteriorating</marker></example>
+      <example type="correct"><marker>morale was deteriorating</marker></example>
+      <example type="correct"><marker>morals were deteriorating</marker></example>
+    </rule>
+    <rule name="The Boarders Of The &lt;Proper Noun&gt; Empire" id="THE_BOARDERS_OF_THE__PROPER_NOUN__EMPIRE">
+      <pattern><token>the</token><token>boarders</token><token>of</token><token>the</token><token>&lt;proper</token><token>noun&gt;</token><token>empire</token></pattern>
+      <message>Did you mean <message>the borders of the &lt;proper noun&gt; empire</message>? "boarders" either ride skateboards or snowboards, or they are renting a room from someone. The edges of a country or empire are "borders".</message>
+      <example type="incorrect"><marker>the boarders of the &lt;proper noun&gt; empire</marker></example>
+      <example type="correct"><marker>the borders of the &lt;proper noun&gt; empire</marker></example>
+    </rule>
+    <rule name="Are Quiet Common" id="ARE_QUIET_COMMON">
+      <pattern><token>are</token><token>quiet</token><token>common</token></pattern>
+      <message>Did you mean <message>are quite common</message>? </message>
+      <example type="incorrect"><marker>are quiet common</marker></example>
+      <example type="correct"><marker>are quite common</marker></example>
+    </rule>
+    <rule name="Teh" id="TEH">
+      <pattern><token>teh</token></pattern>
+      <message>Did you mean <message>the</message>? </message>
+      <example type="incorrect"><marker>teh</marker></example>
+      <example type="correct"><marker>the</marker></example>
+    </rule>
+    <rule name="God Son" id="GOD_SON">
+      <pattern><token>god</token><token>son</token></pattern>
+      <message>Did you mean <message>godson</message> or <message>god's son</message>? </message>
+      <example type="incorrect"><marker>god son</marker></example>
+      <example type="correct"><marker>godson</marker></example>
+      <example type="correct"><marker>god's son</marker></example>
+    </rule>
+    <rule name="Biggest Looser" id="BIGGEST_LOOSER">
+      <pattern><token>biggest</token><token>looser</token></pattern>
+      <message>Did you mean <message>biggest loser</message>? </message>
+      <example type="incorrect"><marker>biggest looser</marker></example>
+      <example type="correct"><marker>biggest loser</marker></example>
+    </rule>
+    <rule name="\D Of" id="_D_OF">
+      <pattern><token>\d</token><token>of</token></pattern>
+      <message>Did you mean <message>two of</message>? It's rarely good form to use numbers that way.</message>
+      <example type="incorrect"><marker>\d of</marker></example>
+      <example type="correct"><marker>two of</marker></example>
+    </rule>
+    <rule name="For Instants" id="FOR_INSTANTS">
+      <pattern><token>for</token><token>instants</token></pattern>
+      <message>Did you mean <message>for instance</message>? </message>
+      <example type="incorrect"><marker>for instants</marker></example>
+      <example type="correct"><marker>for instance</marker></example>
+    </rule>
+    <rule name="What Ever" id="WHAT_EVER">
+      <pattern><token>what</token><token>ever</token></pattern>
+      <message>Did you mean <message>whatever</message>? </message>
+      <example type="incorrect"><marker>what ever</marker></example>
+      <example type="correct"><marker>whatever</marker></example>
+    </rule>
+    <rule name="A Rouse" id="A_ROUSE">
+      <pattern><token>a</token><token>rouse</token></pattern>
+      <message>Did you mean <message>a ruse</message> or <message>a rise</message>? </message>
+      <example type="incorrect"><marker>a rouse</marker></example>
+      <example type="correct"><marker>a ruse</marker></example>
+      <example type="correct"><marker>a rise</marker></example>
+    </rule>
+    <rule name="Their Wears" id="THEIR_WEARS">
+      <pattern><token>their</token><token>wears</token></pattern>
+      <message>Did you mean <message>their wares</message>? </message>
+      <example type="incorrect"><marker>their wears</marker></example>
+      <example type="correct"><marker>their wares</marker></example>
+    </rule>
+    <rule name="The Vile Of" id="THE_VILE_OF">
+      <pattern><token>the</token><token>vile</token><token>of</token></pattern>
+      <message>Did you mean <message>the vial of</message>? </message>
+      <example type="incorrect"><marker>the vile of</marker></example>
+      <example type="correct"><marker>the vial of</marker></example>
+    </rule>
+    <rule name="A Vile Of" id="A_VILE_OF">
+      <pattern><token>a</token><token>vile</token><token>of</token></pattern>
+      <message>Did you mean <message>a vial of</message>? </message>
+      <example type="incorrect"><marker>a vile of</marker></example>
+      <example type="correct"><marker>a vial of</marker></example>
+    </rule>
+    <rule name="Viles Of" id="VILES_OF">
+      <pattern><token>viles</token><token>of</token></pattern>
+      <message>Did you mean <message>vials of</message>? </message>
+      <example type="incorrect"><marker>viles of</marker></example>
+      <example type="correct"><marker>vials of</marker></example>
+    </rule>
+    <rule name="A Vile([.,?!;])" id="A_VILE_________">
+      <pattern><token>a</token><token>vile([.,?!;])</token></pattern>
+      <message>Did you mean <message>a vial\1</message>? </message>
+      <example type="incorrect"><marker>a vile([.,?!;])</marker></example>
+      <example type="correct"><marker>a vial\1</marker></example>
+    </rule>
+    <rule name="Grown Mail" id="GROWN_MAIL">
+      <pattern><token>grown</token><token>mail</token></pattern>
+      <message>Did you mean <message>grown male</message>? </message>
+      <example type="incorrect"><marker>grown mail</marker></example>
+      <example type="correct"><marker>grown male</marker></example>
+    </rule>
+    <rule name="Male Tomcat" id="MALE_TOMCAT">
+      <pattern><token>male</token><token>tomcat</token></pattern>
+      <message>Did you mean <message>tomcat</message>? A tomcat is, by definition, male.</message>
+      <example type="incorrect"><marker>male tomcat</marker></example>
+      <example type="correct"><marker>tomcat</marker></example>
+    </rule>
+    <rule name="Mental Scaring" id="MENTAL_SCARING">
+      <pattern><token>mental</token><token>scaring</token></pattern>
+      <message>Did you mean <message>mental scarring</message>? Scaring is to Scare and Scarring is to Scar.</message>
+      <example type="incorrect"><marker>mental scaring</marker></example>
+      <example type="correct"><marker>mental scarring</marker></example>
+    </rule>
+    <rule name="Night Cloths" id="NIGHT_CLOTHS">
+      <pattern><token>night</token><token>cloths</token></pattern>
+      <message>Did you mean <message>nightclothes</message>? TODO: Confirm the lack of a space.</message>
+      <example type="incorrect"><marker>night cloths</marker></example>
+      <example type="correct"><marker>nightclothes</marker></example>
+    </rule>
+    <rule name="Meat [More] People" id="MEAT__MORE__PEOPLE">
+      <pattern><token>meat</token><token>[more]</token><token>people</token></pattern>
+      <message>Did you mean <message>meet ? people</message>? </message>
+      <example type="incorrect"><marker>meat [more] people</marker></example>
+      <example type="correct"><marker>meet ? people</marker></example>
+    </rule>
+    <rule name="Plane Old" id="PLANE_OLD">
+      <pattern><token>plane</token><token>old</token></pattern>
+      <message>Did you mean <message>plain old</message>? </message>
+      <example type="incorrect"><marker>plane old</marker></example>
+      <example type="correct"><marker>plain old</marker></example>
+    </rule>
+    <rule name="Waist Of Time" id="WAIST_OF_TIME">
+      <pattern><token>waist</token><token>of</token><token>time</token></pattern>
+      <message>Did you mean <message>waste of time</message>? </message>
+      <example type="incorrect"><marker>waist of time</marker></example>
+      <example type="correct"><marker>waste of time</marker></example>
+    </rule>
+    <rule name="Fowl Sorcerous  Foul Sorceress" id="FOWL_SORCEROUS__FOUL_SORCERESS">
+      <pattern><token>fowl</token><token>sorcerous</token><token>foul</token><token>sorceress</token></pattern>
+      <message>Did you mean <message></message>? </message>
+      <example type="incorrect"><marker>fowl sorcerous  foul sorceress</marker></example>
+      <example type="correct"><marker></marker></example>
+    </rule>
+    <rule name="Was Dominate" id="WAS_DOMINATE">
+      <pattern><token>was</token><token>dominate</token></pattern>
+      <message>Did you mean <message>was dominant</message>? </message>
+      <example type="incorrect"><marker>was dominate</marker></example>
+      <example type="correct"><marker>was dominant</marker></example>
+    </rule>
+    <rule name="Access Fat" id="ACCESS_FAT">
+      <pattern><token>access</token><token>fat</token></pattern>
+      <message>Did you mean <message>excess fat</message>? </message>
+      <example type="incorrect"><marker>access fat</marker></example>
+      <example type="correct"><marker>excess fat</marker></example>
+    </rule>
+    <rule name="Heavy As Led" id="HEAVY_AS_LED">
+      <pattern><token>heavy</token><token>as</token><token>led</token></pattern>
+      <message>Did you mean <message>heavy as lead</message>? </message>
+      <example type="incorrect"><marker>heavy as led</marker></example>
+      <example type="correct"><marker>heavy as lead</marker></example>
+    </rule>
+    <rule name="Their Is Always" id="THEIR_IS_ALWAYS">
+      <pattern><token>their</token><token>is</token><token>always</token></pattern>
+      <message>Did you mean <message>there is always</message>? </message>
+      <example type="incorrect"><marker>their is always</marker></example>
+      <example type="correct"><marker>there is always</marker></example>
+    </rule>
+    <rule name="Your Saying" id="YOUR_SAYING">
+      <pattern><token>Your</token><token>saying</token></pattern>
+      <message>Did you mean <message>You're saying</message>? </message>
+      <example type="incorrect"><marker>Your saying</marker></example>
+      <example type="correct"><marker>You're saying</marker></example>
+    </rule>
+    <rule name="Allot" id="ALLOT">
+      <pattern><token>allot</token></pattern>
+      <message>Did you mean <message>a lot</message> or <message>all of</message>? </message>
+      <example type="incorrect"><marker>allot</marker></example>
+      <example type="correct"><marker>a lot</marker></example>
+      <example type="correct"><marker>all of</marker></example>
+    </rule>
+    <rule name="[^.?!,;] %Name\?" id="__________NAME__">
+      <pattern><token>[^.?!,;]</token><token>%NAME\?</token></pattern>
+      <message>Did you mean <message>, %NAME\?</message>? </message>
+      <example type="incorrect"><marker>[^.?!,;] %NAME\?</marker></example>
+      <example type="correct"><marker>, %NAME\?</marker></example>
+    </rule>
+    <rule name="Your Finally" id="YOUR_FINALLY">
+      <pattern><token>Your</token><token>finally</token></pattern>
+      <message>Did you mean <message>You're finally</message>? </message>
+      <example type="incorrect"><marker>Your finally</marker></example>
+      <example type="correct"><marker>You're finally</marker></example>
+    </rule>
+    <rule name="Your Still In" id="YOUR_STILL_IN">
+      <pattern><token>your</token><token>still</token><token>in</token></pattern>
+      <message>Did you mean <message>you're still in</message>? The only case I can think of where this correction would be in error is if "still" is a noun. (the kind of equipment you use to manufacture alcohol at home)</message>
+      <example type="incorrect"><marker>your still in</marker></example>
+      <example type="correct"><marker>you're still in</marker></example>
+    </rule>
+    <rule name="Your Alright" id="YOUR_ALRIGHT">
+      <pattern><token>Your</token><token>alright</token></pattern>
+      <message>Did you mean <message>You're alright</message>? </message>
+      <example type="incorrect"><marker>Your alright</marker></example>
+      <example type="correct"><marker>You're alright</marker></example>
+    </rule>
+    <rule name="Your Not        You'Re Not|Your Knot" id="YOUR_NOT________YOU_RE_NOT_YOUR_KNOT">
+      <pattern><token>Your</token><token>not</token><token>You're</token><token>not|Your</token><token>knot</token></pattern>
+      <message>Did you mean <message></message>? </message>
+      <example type="incorrect"><marker>Your not        You're not|Your knot</marker></example>
+      <example type="correct"><marker></marker></example>
+    </rule>
+    <rule name="Hes Not" id="HES_NOT">
+      <pattern><token>hes</token><token>not</token></pattern>
+      <message>Did you mean <message>he's not</message>? </message>
+      <example type="incorrect"><marker>hes not</marker></example>
+      <example type="correct"><marker>he's not</marker></example>
+    </rule>
+    <rule name="The Jest Of It" id="THE_JEST_OF_IT">
+      <pattern><token>the</token><token>jest</token><token>of</token><token>it</token></pattern>
+      <message>Did you mean <message>the gist of it</message>? </message>
+      <example type="incorrect"><marker>the jest of it</marker></example>
+      <example type="correct"><marker>the gist of it</marker></example>
+    </rule>
+    <rule name="Incase" id="INCASE">
+      <pattern><token>incase</token></pattern>
+      <message>Did you mean <message>in case</message>? </message>
+      <example type="incorrect"><marker>incase</marker></example>
+      <example type="correct"><marker>in case</marker></example>
+    </rule>
+    <rule name="A Women" id="A_WOMEN">
+      <pattern><token>a</token><token>women</token></pattern>
+      <message>Did you mean <message>a woman</message>? </message>
+      <example type="incorrect"><marker>a women</marker></example>
+      <example type="correct"><marker>a woman</marker></example>
+    </rule>
+    <rule name="Give ? Some Advise" id="GIVE___SOME_ADVISE">
+      <pattern><token>give</token><token>?</token><token>some</token><token>advise</token></pattern>
+      <message>Did you mean <message>give ? some advice</message>? </message>
+      <example type="incorrect"><marker>give ? some advise</marker></example>
+      <example type="correct"><marker>give ? some advice</marker></example>
+    </rule>
+    <rule name="Viscous Slashes" id="VISCOUS_SLASHES">
+      <pattern><token>viscous</token><token>slashes</token></pattern>
+      <message>Did you mean <message>vicious slashes</message>? </message>
+      <example type="incorrect"><marker>viscous slashes</marker></example>
+      <example type="correct"><marker>vicious slashes</marker></example>
+    </rule>
+    <rule name="What To Ware" id="WHAT_TO_WARE">
+      <pattern><token>what</token><token>to</token><token>ware</token></pattern>
+      <message>Did you mean <message>what to wear</message>? </message>
+      <example type="incorrect"><marker>what to ware</marker></example>
+      <example type="correct"><marker>what to wear</marker></example>
+    </rule>
+    <rule name="Needles To Say" id="NEEDLES_TO_SAY">
+      <pattern><token>needles</token><token>to</token><token>say</token></pattern>
+      <message>Did you mean <message>needless to say</message>? </message>
+      <example type="incorrect"><marker>needles to say</marker></example>
+      <example type="correct"><marker>needless to say</marker></example>
+    </rule>
+    <rule name="Out Of Site" id="OUT_OF_SITE">
+      <pattern><token>out</token><token>of</token><token>site</token></pattern>
+      <message>Did you mean <message>out of sight</message>? A "site" is a location. "Sight" is a type of perception.</message>
+      <example type="incorrect"><marker>out of site</marker></example>
+      <example type="correct"><marker>out of sight</marker></example>
+    </rule>
+    <rule name="Defiantly Change" id="DEFIANTLY_CHANGE">
+      <pattern><token>defiantly</token><token>change</token></pattern>
+      <message>Did you mean <message>definitely change</message> or <message>defiantly change</message>? It's much more common for "defiantly change" to be a typo than the intended phrase.</message>
+      <example type="incorrect"><marker>defiantly change</marker></example>
+      <example type="correct"><marker>definitely change</marker></example>
+      <example type="correct"><marker>defiantly change</marker></example>
+    </rule>
+    <rule name="Duel Citizenship" id="DUEL_CITIZENSHIP">
+      <pattern><token>duel</token><token>citizenship</token></pattern>
+      <message>Did you mean <message>dual citizenship</message>? </message>
+      <example type="incorrect"><marker>duel citizenship</marker></example>
+      <example type="correct"><marker>dual citizenship</marker></example>
+    </rule>
+    <rule name="Supressed A Shutter" id="SUPRESSED_A_SHUTTER">
+      <pattern><token>supressed</token><token>a</token><token>shutter</token></pattern>
+      <message>Did you mean <message>supressed a shudder</message>? </message>
+      <example type="incorrect"><marker>supressed a shutter</marker></example>
+      <example type="correct"><marker>supressed a shudder</marker></example>
+    </rule>
+    <rule name="A Descent Person" id="A_DESCENT_PERSON">
+      <pattern><token>a</token><token>descent</token><token>person</token></pattern>
+      <message>Did you mean <message>a decent person</message>? </message>
+      <example type="incorrect"><marker>a descent person</marker></example>
+      <example type="correct"><marker>a decent person</marker></example>
+    </rule>
+    <rule name="Currier" id="CURRIER">
+      <pattern><token>currier</token></pattern>
+      <message>Did you mean <message>courier</message>? </message>
+      <example type="incorrect"><marker>currier</marker></example>
+      <example type="correct"><marker>courier</marker></example>
+    </rule>
+    <rule name="Raged" id="RAGED">
+      <pattern><token>raged</token></pattern>
+      <message>Did you mean <message>ragged</message> or <message>raged</message>? raged is a valid word (paste tense of "to rage"), but it's also a typo of ragged.</message>
+      <example type="incorrect"><marker>raged</marker></example>
+      <example type="correct"><marker>ragged</marker></example>
+      <example type="correct"><marker>raged</marker></example>
+    </rule>
+    <rule name="Sacummed" id="SACUMMED">
+      <pattern><token>sacummed</token></pattern>
+      <message>Did you mean <message>succumbed</message>? This correction even eludes aspell, so it has to be in the typomap.</message>
+      <example type="incorrect"><marker>sacummed</marker></example>
+      <example type="correct"><marker>succumbed</marker></example>
+    </rule>
+    <rule name="In Good Conscious" id="IN_GOOD_CONSCIOUS">
+      <pattern><token>in</token><token>good</token><token>conscious</token></pattern>
+      <message>Did you mean <message>in good conscience</message>? </message>
+      <example type="incorrect"><marker>in good conscious</marker></example>
+      <example type="correct"><marker>in good conscience</marker></example>
+    </rule>
+    <rule name="Thrown Room" id="THROWN_ROOM">
+      <pattern><token>thrown</token><token>room</token></pattern>
+      <message>Did you mean <message>throne room</message>? </message>
+      <example type="incorrect"><marker>thrown room</marker></example>
+      <example type="correct"><marker>throne room</marker></example>
+    </rule>
+    <rule name="Some Descent Skills" id="SOME_DESCENT_SKILLS">
+      <pattern><token>some</token><token>descent</token><token>skills</token></pattern>
+      <message>Did you mean <message>some decent skills</message>? While the current form is valid english, the odds of it being the intended spelling are miniscule.</message>
+      <example type="incorrect"><marker>some descent skills</marker></example>
+      <example type="correct"><marker>some decent skills</marker></example>
+    </rule>
+    <rule name="Getting To Old" id="GETTING_TO_OLD">
+      <pattern><token>getting</token><token>to</token><token>old</token></pattern>
+      <message>Did you mean <message>getting too old</message>? </message>
+      <example type="incorrect"><marker>getting to old</marker></example>
+      <example type="correct"><marker>getting too old</marker></example>
+    </rule>
+    <rule name="More Stronger" id="MORE_STRONGER">
+      <pattern><token>more</token><token>stronger</token></pattern>
+      <message>Did you mean <message>stronger</message> or <message>more powerful</message>? </message>
+      <example type="incorrect"><marker>more stronger</marker></example>
+      <example type="correct"><marker>stronger</marker></example>
+      <example type="correct"><marker>more powerful</marker></example>
+    </rule>
+    <rule name="If I Here" id="IF_I_HERE">
+      <pattern><token>if</token><token>I</token><token>here</token></pattern>
+      <message>Did you mean <message>if I hear</message>? </message>
+      <example type="incorrect"><marker>if I here</marker></example>
+      <example type="correct"><marker>if I hear</marker></example>
+    </rule>
+    <rule name="Took You As Granted" id="TOOK_YOU_AS_GRANTED">
+      <pattern><token>took</token><token>you</token><token>as</token><token>granted</token></pattern>
+      <message>Did you mean <message>took you for granted</message>? </message>
+      <example type="incorrect"><marker>took you as granted</marker></example>
+      <example type="correct"><marker>took you for granted</marker></example>
+    </rule>
+    <rule name="Crack Pot" id="CRACK_POT">
+      <pattern><token>crack</token><token>pot</token></pattern>
+      <message>Did you mean <message>crackpot</message> or <message>crack, pot</message>? </message>
+      <example type="incorrect"><marker>crack pot</marker></example>
+      <example type="correct"><marker>crackpot</marker></example>
+      <example type="correct"><marker>crack, pot</marker></example>
+    </rule>
+    <rule name="Collage Graduate" id="COLLAGE_GRADUATE">
+      <pattern><token>collage</token><token>graduate</token></pattern>
+      <message>Did you mean <message>college graduate</message>? </message>
+      <example type="incorrect"><marker>collage graduate</marker></example>
+      <example type="correct"><marker>college graduate</marker></example>
+    </rule>
+    <rule name="Payed" id="PAYED">
+      <pattern><token>payed</token></pattern>
+      <message>Did you mean <message>paid</message>? </message>
+      <example type="incorrect"><marker>payed</marker></example>
+      <example type="correct"><marker>paid</marker></example>
+    </rule>
+    <rule name="Fore-Brooding" id="FORE-BROODING">
+      <pattern><token>fore-brooding</token></pattern>
+      <message>Did you mean <message>foreboding</message>? </message>
+      <example type="incorrect"><marker>fore-brooding</marker></example>
+      <example type="correct"><marker>foreboding</marker></example>
+    </rule>
+    <rule name="Grand Mother" id="GRAND_MOTHER">
+      <pattern><token>grand</token><token>mother</token></pattern>
+      <message>Did you mean <message>grandmother</message>? </message>
+      <example type="incorrect"><marker>grand mother</marker></example>
+      <example type="correct"><marker>grandmother</marker></example>
+    </rule>
+    <rule name="Be Dominate" id="BE_DOMINATE">
+      <pattern><token>be</token><token>dominate</token></pattern>
+      <message>Did you mean <message>be dominant</message> or <message>be dominated</message> or <message>dominate</message>? </message>
+      <example type="incorrect"><marker>be dominate</marker></example>
+      <example type="correct"><marker>be dominant</marker></example>
+      <example type="correct"><marker>be dominated</marker></example>
+      <example type="correct"><marker>dominate</marker></example>
+    </rule>
+    <rule name="More Dominate" id="MORE_DOMINATE">
+      <pattern><token>more</token><token>dominate</token></pattern>
+      <message>Did you mean <message>more dominant</message>? </message>
+      <example type="incorrect"><marker>more dominate</marker></example>
+      <example type="correct"><marker>more dominant</marker></example>
+    </rule>
+    <rule name="Sore Above The Clouds" id="SORE_ABOVE_THE_CLOUDS">
+      <pattern><token>sore</token><token>above</token><token>the</token><token>clouds</token></pattern>
+      <message>Did you mean <message>soar above the clouds</message>? </message>
+      <example type="incorrect"><marker>sore above the clouds</marker></example>
+      <example type="correct"><marker>soar above the clouds</marker></example>
+    </rule>
+    <rule name="Lied On" id="LIED_ON">
+      <pattern><token>lied</token><token>on</token></pattern>
+      <message>Did you mean <message>lay on</message>? </message>
+      <example type="incorrect"><marker>lied on</marker></example>
+      <example type="correct"><marker>lay on</marker></example>
+    </rule>
+    <rule name="Defiantly Has" id="DEFIANTLY_HAS">
+      <pattern><token>defiantly</token><token>has</token></pattern>
+      <message>Did you mean <message>definitely has</message> or <message>has defiantly</message>? </message>
+      <example type="incorrect"><marker>defiantly has</marker></example>
+      <example type="correct"><marker>definitely has</marker></example>
+      <example type="correct"><marker>has defiantly</marker></example>
+    </rule>
+    <rule name="Cloths" id="CLOTHS">
+      <pattern><token>cloths</token></pattern>
+      <message>Did you mean <message>clothes</message> or <message>pieces of cloth</message>? "Cloths" is the plural short form of "washcloth". It's almost always used in error in fiction.</message>
+      <example type="incorrect"><marker>cloths</marker></example>
+      <example type="correct"><marker>clothes</marker></example>
+      <example type="correct"><marker>pieces of cloth</marker></example>
+    </rule>
+    <rule name="Don'T Why" id="DON_T_WHY">
+      <pattern><token>don't</token><token>why</token></pattern>
+      <message>Did you mean <message>don't know why</message> or <message>don't care why</message>? </message>
+      <example type="incorrect"><marker>don't why</marker></example>
+      <example type="correct"><marker>don't know why</marker></example>
+      <example type="correct"><marker>don't care why</marker></example>
+    </rule>
+    <rule name="Broke Joint" id="BROKE_JOINT">
+      <pattern><token>broke</token><token>joint</token></pattern>
+      <message>Did you mean <message>broken joint</message>? </message>
+      <example type="incorrect"><marker>broke joint</marker></example>
+      <example type="correct"><marker>broken joint</marker></example>
+    </rule>
+    <rule name="And All There" id="AND_ALL_THERE">
+      <pattern><token>and</token><token>all</token><token>there</token></pattern>
+      <message>Did you mean <message>and all their</message>? </message>
+      <example type="incorrect"><marker>and all there</marker></example>
+      <example type="correct"><marker>and all their</marker></example>
+    </rule>
+    <rule name="Anal Attentive" id="ANAL_ATTENTIVE">
+      <pattern><token>anal</token><token>attentive</token></pattern>
+      <message>Did you mean <message>anal retentive</message>? </message>
+      <example type="incorrect"><marker>anal attentive</marker></example>
+      <example type="correct"><marker>anal retentive</marker></example>
+    </rule>
+    <rule name="Wreck Room" id="WRECK_ROOM">
+      <pattern><token>wreck</token><token>room</token></pattern>
+      <message>Did you mean <message>rec room</message>? </message>
+      <example type="incorrect"><marker>wreck room</marker></example>
+      <example type="correct"><marker>rec room</marker></example>
+    </rule>
+  </category>
+  <category name="Harry Potter">
+    <!--TODO: Hand-tune this and fill in the example tags.-->
+    <rule name="Miss Blaise" id="MISS_BLAISE">
+      <pattern><token>Miss</token><token>Blaise</token></pattern>
+      <message>Did you mean <message>X!X!X</message>? Blaise is a masculine name from France. Would you name a girl "David" or "Jacob"?</message>
+      <example type="incorrect"><marker>Miss Blaise</marker></example>
+      <example type="correct"><marker>X!X!X</marker></example>
+    </rule>
+    <rule name="Ms. Blaise" id="MS__BLAISE">
+      <pattern><token>Ms.</token><token>Blaise</token></pattern>
+      <message>Did you mean <message>X!X!X</message>? Blaise is a masculine name from France. Would you name a girl "David" or "Jacob"?</message>
+      <example type="incorrect"><marker>Ms. Blaise</marker></example>
+      <example type="correct"><marker>X!X!X</marker></example>
+    </rule>
+    <rule name="Serverus" id="SERVERUS">
+      <pattern><token>Serverus</token></pattern>
+      <message>Did you mean <message>Severus</message>? </message>
+      <example type="incorrect"><marker>Serverus</marker></example>
+      <example type="correct"><marker>Severus</marker></example>
+    </rule>
+    <rule name="Dumbledore'S Pensive" id="DUMBLEDORE_S_PENSIVE">
+      <pattern><token>Dumbledore's</token><token>pensive</token></pattern>
+      <message>Did you mean <message>Dumbledore's penseive</message>? </message>
+      <example type="incorrect"><marker>Dumbledore's pensive</marker></example>
+      <example type="correct"><marker>Dumbledore's penseive</marker></example>
+    </rule>
+    <rule name="Cruciartis" id="CRUCIARTIS">
+      <pattern><token>cruciartis</token></pattern>
+      <message>Did you mean <message>cruciatis</message>? </message>
+      <example type="incorrect"><marker>cruciartis</marker></example>
+      <example type="correct"><marker>cruciatis</marker></example>
+    </rule>
+    <rule name="Mobiluscorpus" id="MOBILUSCORPUS">
+      <pattern><token>Mobiluscorpus</token></pattern>
+      <message>Did you mean <message>Mobilicorpus</message>? </message>
+      <example type="incorrect"><marker>Mobiluscorpus</marker></example>
+      <example type="correct"><marker>Mobilicorpus</marker></example>
+    </rule>
+    <rule name="Butter Beer" id="BUTTER_BEER">
+      <pattern><token>butter</token><token>beer</token></pattern>
+      <message>Did you mean <message>butterbeer</message>? It's just one word.</message>
+      <example type="incorrect"><marker>butter beer</marker></example>
+      <example type="correct"><marker>butterbeer</marker></example>
+    </rule>
+    <rule name="Askaban" id="ASKABAN">
+      <pattern><token>Askaban</token></pattern>
+      <message>Did you mean <message>Azkaban</message>? </message>
+      <example type="incorrect"><marker>Askaban</marker></example>
+      <example type="correct"><marker>Azkaban</marker></example>
+    </rule>
+    <rule name="Virginia" id="VIRGINIA">
+      <pattern><token>Virginia</token></pattern>
+      <message>Did you mean <message>Ginevra</message>? Ginny is short for Ginevra, not Virginia.</message>
+      <example type="incorrect"><marker>Virginia</marker></example>
+      <example type="correct"><marker>Ginevra</marker></example>
+    </rule>
+    <rule name="Lucious" id="LUCIOUS">
+      <pattern><token>Lucious</token></pattern>
+      <message>Did you mean <message>Lucius</message>? </message>
+      <example type="incorrect"><marker>Lucious</marker></example>
+      <example type="correct"><marker>Lucius</marker></example>
+    </rule>
+    <rule name="Balisk" id="BALISK">
+      <pattern><token>balisk</token></pattern>
+      <message>Did you mean <message>basilisk</message>? </message>
+      <example type="incorrect"><marker>balisk</marker></example>
+      <example type="correct"><marker>basilisk</marker></example>
+    </rule>
+    <rule name="Arvada Kedavra" id="ARVADA_KEDAVRA">
+      <pattern><token>Arvada</token><token>Kedavra</token></pattern>
+      <message>Did you mean <message>Avada Kedavra</message>? </message>
+      <example type="incorrect"><marker>Arvada Kedavra</marker></example>
+      <example type="correct"><marker>Avada Kedavra</marker></example>
+    </rule>
+    <rule name="Veritserum" id="VERITSERUM">
+      <pattern><token>veritserum</token></pattern>
+      <message>Did you mean <message>veritaserum</message>? </message>
+      <example type="incorrect"><marker>veritserum</marker></example>
+      <example type="correct"><marker>veritaserum</marker></example>
+    </rule>
+    <rule name="Mooney" id="MOONEY">
+      <pattern><token>Mooney</token></pattern>
+      <message>Did you mean <message>Moony</message>? </message>
+      <example type="incorrect"><marker>Mooney</marker></example>
+      <example type="correct"><marker>Moony</marker></example>
+    </rule>
+    <rule name="Butter Beer" id="BUTTER_BEER">
+      <pattern><token>butter</token><token>beer</token></pattern>
+      <message>Did you mean <message>butterbeer</message>? </message>
+      <example type="incorrect"><marker>butter beer</marker></example>
+      <example type="correct"><marker>butterbeer</marker></example>
+    </rule>
+    <rule name="Legimancy" id="LEGIMANCY">
+      <pattern><token>Legimancy</token></pattern>
+      <message>Did you mean <message>Legilimency</message>? </message>
+      <example type="incorrect"><marker>Legimancy</marker></example>
+      <example type="correct"><marker>Legilimency</marker></example>
+    </rule>
+  </category>
+  <category name="Ranma ½">
+    <!--TODO: Hand-tune this and fill in the example tags.-->
+    <rule name="Nermia" id="NERMIA">
+      <pattern><token>Nermia</token></pattern>
+      <message>Did you mean <message>Nerima</message>? </message>
+      <example type="incorrect"><marker>Nermia</marker></example>
+      <example type="correct"><marker>Nerima</marker></example>
+    </rule>
+    <rule name="Moose" id="MOOSE">
+      <pattern><token>Moose</token></pattern>
+      <message>Did you mean <message>Mousse</message>? </message>
+      <example type="incorrect"><marker>Moose</marker></example>
+      <example type="correct"><marker>Mousse</marker></example>
+    </rule>
+    <rule name="Chine " id="CHINE_">
+      <pattern><token>Chine</token></pattern>
+      <message>Did you mean <message>China</message> or <message>Shine</message>? </message>
+      <example type="incorrect"><marker>Chine </marker></example>
+      <example type="correct"><marker>China</marker></example>
+      <example type="correct"><marker>Shine</marker></example>
+    </rule>
+    <rule name="Nadoka" id="NADOKA">
+      <pattern><token>Nadoka</token></pattern>
+      <message>Did you mean <message>Nodoka</message>? </message>
+      <example type="incorrect"><marker>Nadoka</marker></example>
+      <example type="correct"><marker>Nodoka</marker></example>
+    </rule>
+    <rule name="Ranam" id="RANAM">
+      <pattern><token>Ranam</token></pattern>
+      <message>Did you mean <message>Ranma</message>? </message>
+      <example type="incorrect"><marker>Ranam</marker></example>
+      <example type="correct"><marker>Ranma</marker></example>
+    </rule>
+    <rule name="Raman" id="RAMAN">
+      <pattern><token>Raman</token></pattern>
+      <message>Did you mean <message>Ranma</message>? </message>
+      <example type="incorrect"><marker>Raman</marker></example>
+      <example type="correct"><marker>Ranma</marker></example>
+    </rule>
+    <rule name="Tatiwaki" id="TATIWAKI">
+      <pattern><token>Tatiwaki</token></pattern>
+      <message>Did you mean <message>Tatewaki</message>? </message>
+      <example type="incorrect"><marker>Tatiwaki</marker></example>
+      <example type="correct"><marker>Tatewaki</marker></example>
+    </rule>
+    <rule name="Bokan" id="BOKAN">
+      <pattern><token>bokan</token></pattern>
+      <message>Did you mean <message>bokken</message>? </message>
+      <example type="incorrect"><marker>bokan</marker></example>
+      <example type="correct"><marker>bokken</marker></example>
+    </rule>
+    <rule name="Bokken" id="BOKKEN">
+      <pattern><token>bokken</token></pattern>
+      <message>Did you mean <message>bokuto</message>? bokken is plural and 99% of the time it's used, the writer should have used the singular form.</message>
+      <example type="incorrect"><marker>bokken</marker></example>
+      <example type="correct"><marker>bokuto</marker></example>
+    </rule>
+    <rule name="Kirara" id="KIRARA">
+      <pattern><token>Kirara</token></pattern>
+      <message>Did you mean <message>Kimiko</message>? Unless your story is a crossover with InuYasha, please consider this correction for what is probably the name of Soun Tendo's late wife.</message>
+      <example type="incorrect"><marker>Kirara</marker></example>
+      <example type="correct"><marker>Kimiko</marker></example>
+    </rule>
+    <rule name="Rep" id="REP">
+      <pattern><token>rep</token></pattern>
+      <message>Did you mean <message>reputation</message> or <message>representative</message>? Not even Ranma would shorten "reputation" to "rep" and everyone else would use whichever full word was correct. So say many fanfiction connoisseurs.</message>
+      <example type="incorrect"><marker>rep</marker></example>
+      <example type="correct"><marker>reputation</marker></example>
+      <example type="correct"><marker>representative</marker></example>
+    </rule>
+    <rule name="Baka" id="BAKA">
+      <pattern><token>baka</token></pattern>
+      <message>Did you mean <message>jerk</message> or <message>idiot</message> or <message>stupid</message>? It was only cool the first time we read it. With the exception of things that don't translate very well like -san, -kun, -chan, and -bozu, and nouns like attack and object names, fics looks more professional with only translated content.</message>
+      <example type="incorrect"><marker>baka</marker></example>
+      <example type="correct"><marker>jerk</marker></example>
+      <example type="correct"><marker>idiot</marker></example>
+      <example type="correct"><marker>stupid</marker></example>
+    </rule>
+    <rule name="School Of Everything Goes" id="SCHOOL_OF_EVERYTHING_GOES">
+      <pattern><token>School</token><token>of</token><token>Everything</token><token>Goes</token></pattern>
+      <message>Did you mean <message>School of Anything Goes</message>? Now this is just plain laziness unless you are writing one of those "Ranma loses the right to practise Anything Goes and comes up with his own school" stories.</message>
+      <example type="incorrect"><marker>School of Everything Goes</marker></example>
+      <example type="correct"><marker>School of Anything Goes</marker></example>
+    </rule>
+    <rule name="Beantos" id="BEANTOS">
+      <pattern><token>Beantos</token></pattern>
+      <message>Did you mean <message>Bentos</message> or <message>Bentous</message>? Pick your favorite correction. Both are correct, depending on which romanization you personally prefer.</message>
+      <example type="incorrect"><marker>Beantos</marker></example>
+      <example type="correct"><marker>Bentos</marker></example>
+      <example type="correct"><marker>Bentous</marker></example>
+    </rule>
+    <rule name="Ra-Chan" id="RA-CHAN">
+      <pattern><token>Ra-chan</token></pattern>
+      <message>Did you mean <message>Ran-chan</message>? </message>
+      <example type="incorrect"><marker>Ra-chan</marker></example>
+      <example type="correct"><marker>Ran-chan</marker></example>
+    </rule>
+    <rule name="U-Chan" id="U-CHAN">
+      <pattern><token>U-chan</token></pattern>
+      <message>Did you mean <message>Ucchan</message>? I know. It's an odd spelling, but a far as I can tell, it's the correct one.</message>
+      <example type="incorrect"><marker>U-chan</marker></example>
+      <example type="correct"><marker>Ucchan</marker></example>
+    </rule>
+    <rule name="Uchan" id="UCHAN">
+      <pattern><token>Uchan</token></pattern>
+      <message>Did you mean <message>Ucchan</message>? </message>
+      <example type="incorrect"><marker>Uchan</marker></example>
+      <example type="correct"><marker>Ucchan</marker></example>
+    </rule>
+    <rule name="Furinken" id="FURINKEN">
+      <pattern><token>furinken</token></pattern>
+      <message>Did you mean <message>furinkan</message>? </message>
+      <example type="incorrect"><marker>furinken</marker></example>
+      <example type="correct"><marker>furinkan</marker></example>
+    </rule>
+    <rule name="Firenken" id="FIRENKEN">
+      <pattern><token>firenken</token></pattern>
+      <message>Did you mean <message>furinkan</message>? </message>
+      <example type="incorrect"><marker>firenken</marker></example>
+      <example type="correct"><marker>furinkan</marker></example>
+    </rule>
+    <rule name="Yati" id="YATI">
+      <pattern><token>yati</token></pattern>
+      <message>Did you mean <message>yattai</message>? </message>
+      <example type="incorrect"><marker>yati</marker></example>
+      <example type="correct"><marker>yattai</marker></example>
+    </rule>
+    <rule name="Yatti" id="YATTI">
+      <pattern><token>yatti</token></pattern>
+      <message>Did you mean <message>yattai</message>? </message>
+      <example type="incorrect"><marker>yatti</marker></example>
+      <example type="correct"><marker>yattai</marker></example>
+    </rule>
+    <rule name="Musks" id="MUSKS">
+      <pattern><token>Musks</token></pattern>
+      <message>Did you mean <message>Musk</message>? When used as the name of a tribe, you don't put 's' on the end.</message>
+      <example type="incorrect"><marker>Musks</marker></example>
+      <example type="correct"><marker>Musk</marker></example>
+    </rule>
+    <rule name="Hopposai" id="HOPPOSAI">
+      <pattern><token>Hopposai</token></pattern>
+      <message>Did you mean <message>Happosai</message>? </message>
+      <example type="incorrect"><marker>Hopposai</marker></example>
+      <example type="correct"><marker>Happosai</marker></example>
+    </rule>
+    <rule name="Red Head" id="RED_HEAD">
+      <pattern><token>red</token><token>head</token></pattern>
+      <message>Did you mean <message>redhead</message> or <message>red head</message>? "Red head" is valid, but it's usually a typo for "redhead".</message>
+      <example type="incorrect"><marker>red head</marker></example>
+      <example type="correct"><marker>redhead</marker></example>
+      <example type="correct"><marker>red head</marker></example>
+    </rule>
+    <rule name="Nekohatten" id="NEKOHATTEN">
+      <pattern><token>nekohatten</token></pattern>
+      <message>Did you mean <message>Nekohanten</message>? </message>
+      <example type="incorrect"><marker>nekohatten</marker></example>
+      <example type="correct"><marker>Nekohanten</marker></example>
+    </rule>
+    <rule name="Nekohaten" id="NEKOHATEN">
+      <pattern><token>nekohaten</token></pattern>
+      <message>Did you mean <message>Nekohanten</message>? </message>
+      <example type="incorrect"><marker>nekohaten</marker></example>
+      <example type="correct"><marker>Nekohanten</marker></example>
+    </rule>
+    <rule name="Josenkyo" id="JOSENKYO">
+      <pattern><token>Josenkyo</token></pattern>
+      <message>Did you mean <message>Jusenkyo</message>? </message>
+      <example type="incorrect"><marker>Josenkyo</marker></example>
+      <example type="correct"><marker>Jusenkyo</marker></example>
+    </rule>
+    <rule name="Nekohauten" id="NEKOHAUTEN">
+      <pattern><token>Nekohauten</token></pattern>
+      <message>Did you mean <message>Nekohanten</message>? </message>
+      <example type="incorrect"><marker>Nekohauten</marker></example>
+      <example type="correct"><marker>Nekohanten</marker></example>
+    </rule>
+    <rule name="Tai Kuan Do" id="TAI_KUAN_DO">
+      <pattern><token>Tai</token><token>Kuan</token><token>Do</token></pattern>
+      <message>Did you mean <message>Tae Kwon Do</message>? It's not Japanese; It's Korean. Use the proper Korean transliteration.</message>
+      <example type="incorrect"><marker>Tai Kuan Do</marker></example>
+      <example type="correct"><marker>Tae Kwon Do</marker></example>
+    </rule>
+    <rule name="Jhusenkyou" id="JHUSENKYOU">
+      <pattern><token>Jhusenkyou</token></pattern>
+      <message>Did you mean <message>Jusenkyo</message> or <message>Jusenkyou</message>? I've never seen Jusenkyo transliterated with an h in official Ranma materials.</message>
+      <example type="incorrect"><marker>Jhusenkyou</marker></example>
+      <example type="correct"><marker>Jusenkyo</marker></example>
+      <example type="correct"><marker>Jusenkyou</marker></example>
+    </rule>
+    <rule name="Hurigana" id="HURIGANA">
+      <pattern><token>hurigana</token></pattern>
+      <message>Did you mean <message>hiragana</message>? </message>
+      <example type="incorrect"><marker>hurigana</marker></example>
+      <example type="correct"><marker>hiragana</marker></example>
+    </rule>
+    <rule name="Romiko" id="ROMIKO">
+      <pattern><token>Romiko</token></pattern>
+      <message>Did you mean <message>Rumiko</message>? Ranma 1/2 was created by Rumiko Takahashi.</message>
+      <example type="incorrect"><marker>Romiko</marker></example>
+      <example type="correct"><marker>Rumiko</marker></example>
+    </rule>
+    <rule name="Kunjio" id="KUNJIO">
+      <pattern><token>Kunjio</token></pattern>
+      <message>Did you mean <message>Kuonji</message>? Ukyo's family name is transliterated as Kuonji.</message>
+      <example type="incorrect"><marker>Kunjio</marker></example>
+      <example type="correct"><marker>Kuonji</marker></example>
+    </rule>
+    <rule name="Arian" id="ARIAN">
+      <pattern><token>arian</token></pattern>
+      <message>Did you mean <message>airen</message>? </message>
+      <example type="incorrect"><marker>arian</marker></example>
+      <example type="correct"><marker>airen</marker></example>
+    </rule>
+    <rule name="You,? Anata" id="YOU___ANATA">
+      <pattern><token>you,?</token><token>anata</token></pattern>
+      <message>Did you mean <message>you,? dear</message>? Anata translates to an affectionate "you", not "dear".</message>
+      <example type="incorrect"><marker>you,? anata</marker></example>
+      <example type="correct"><marker>you,? dear</marker></example>
+    </rule>
+    <rule name="Dowse" id="DOWSE">
+      <pattern><token>dowse</token></pattern>
+      <message>Did you mean <message>douse</message>? To get someone wet is to "douse" them. To psychically search for something with a pointed stick is to "dowse" for it.</message>
+      <example type="incorrect"><marker>dowse</marker></example>
+      <example type="correct"><marker>douse</marker></example>
+    </rule>
+    <rule name="Nihau" id="NIHAU">
+      <pattern><token>nihau</token></pattern>
+      <message>Did you mean <message>nihao</message>? </message>
+      <example type="incorrect"><marker>nihau</marker></example>
+      <example type="correct"><marker>nihao</marker></example>
+    </rule>
+    <rule name="Amagouriken" id="AMAGOURIKEN">
+      <pattern><token>Amagouriken</token></pattern>
+      <message>Did you mean <message>Amaguriken</message>? </message>
+      <example type="incorrect"><marker>Amagouriken</marker></example>
+      <example type="correct"><marker>Amaguriken</marker></example>
+    </rule>
+    <rule name="Mau Uniform" id="MAU_UNIFORM">
+      <pattern><token>Mau</token><token>uniform</token></pattern>
+      <message>Did you mean <message>Mao uniform</message>? Geeze. Mau is a breed of cat. Mao was a Chinese dictator.</message>
+      <example type="incorrect"><marker>Mau uniform</marker></example>
+      <example type="correct"><marker>Mao uniform</marker></example>
+    </rule>
+    <rule name="Nekoken" id="NEKOKEN">
+      <pattern><token>Nekoken</token></pattern>
+      <message>Did you mean <message>Neko-ken</message>? </message>
+      <example type="incorrect"><marker>Nekoken</marker></example>
+      <example type="correct"><marker>Neko-ken</marker></example>
+    </rule>
+    <rule name="Jocketzu" id="JOCKETZU">
+      <pattern><token>Jocketzu</token></pattern>
+      <message>Did you mean <message>Joketsu</message>? TODO: Confirm that this correction is valid. Should it be Joketsuzoku instead?</message>
+      <example type="incorrect"><marker>Jocketzu</marker></example>
+      <example type="correct"><marker>Joketsu</marker></example>
+    </rule>
+    <rule name="Nekohantin" id="NEKOHANTIN">
+      <pattern><token>Nekohantin</token></pattern>
+      <message>Did you mean <message>Nekohanten</message>? </message>
+      <example type="incorrect"><marker>Nekohantin</marker></example>
+      <example type="correct"><marker>Nekohanten</marker></example>
+    </rule>
+    <rule name="Xaim-Pu" id="XAIM-PU">
+      <pattern><token>Xaim-Pu</token></pattern>
+      <message>Did you mean <message>Xian-pu</message> or <message>Shan-pu</message> or <message>Shampoo</message>? </message>
+      <example type="incorrect"><marker>Xaim-Pu</marker></example>
+      <example type="correct"><marker>Xian-pu</marker></example>
+      <example type="correct"><marker>Shan-pu</marker></example>
+      <example type="correct"><marker>Shampoo</marker></example>
+    </rule>
+    <rule name="Mzu-Tzu" id="MZU-TZU">
+      <pattern><token>Mzu-Tzu</token></pattern>
+      <message>Did you mean <message>Mu-tzu</message> or <message>Mu-tse</message> or <message>Mousse</message>? </message>
+      <example type="incorrect"><marker>Mzu-Tzu</marker></example>
+      <example type="correct"><marker>Mu-tzu</marker></example>
+      <example type="correct"><marker>Mu-tse</marker></example>
+      <example type="correct"><marker>Mousse</marker></example>
+    </rule>
+    <rule name="Tatawaki" id="TATAWAKI">
+      <pattern><token>Tatawaki</token></pattern>
+      <message>Did you mean <message>Tatewaki</message>? </message>
+      <example type="incorrect"><marker>Tatawaki</marker></example>
+      <example type="correct"><marker>Tatewaki</marker></example>
+    </rule>
+    <rule name="Furican" id="FURICAN">
+      <pattern><token>Furican</token></pattern>
+      <message>Did you mean <message>Furinkan</message>? </message>
+      <example type="incorrect"><marker>Furican</marker></example>
+      <example type="correct"><marker>Furinkan</marker></example>
+    </rule>
+    <rule name="Nabika" id="NABIKA">
+      <pattern><token>Nabika</token></pattern>
+      <message>Did you mean <message>Nabiki</message>? </message>
+      <example type="incorrect"><marker>Nabika</marker></example>
+      <example type="correct"><marker>Nabiki</marker></example>
+    </rule>
+    <rule name="Soatome" id="SOATOME">
+      <pattern><token>Soatome</token></pattern>
+      <message>Did you mean <message>Saotome</message>? </message>
+      <example type="incorrect"><marker>Soatome</marker></example>
+      <example type="correct"><marker>Saotome</marker></example>
+    </rule>
+    <rule name="Ryougo" id="RYOUGO">
+      <pattern><token>Ryougo</token></pattern>
+      <message>Did you mean <message>Ryoga</message>? </message>
+      <example type="incorrect"><marker>Ryougo</marker></example>
+      <example type="correct"><marker>Ryoga</marker></example>
+    </rule>
+    <rule name="Happossai" id="HAPPOSSAI">
+      <pattern><token>Happossai</token></pattern>
+      <message>Did you mean <message>Happosai</message>? </message>
+      <example type="incorrect"><marker>Happossai</marker></example>
+      <example type="correct"><marker>Happosai</marker></example>
+    </rule>
+    <rule name="Happassai" id="HAPPASSAI">
+      <pattern><token>Happassai</token></pattern>
+      <message>Did you mean <message>Happosai</message>? </message>
+      <example type="incorrect"><marker>Happassai</marker></example>
+      <example type="correct"><marker>Happosai</marker></example>
+    </rule>
+    <rule name="Nieuchiezu" id="NIEUCHIEZU">
+      <pattern><token>Nieuchiezu</token></pattern>
+      <message>Did you mean <message>Nyuchezu</message>? </message>
+      <example type="incorrect"><marker>Nieuchiezu</marker></example>
+      <example type="correct"><marker>Nyuchezu</marker></example>
+    </rule>
+    <rule name="Maylanka" id="MAYLANKA">
+      <pattern><token>Maylanka</token></pattern>
+      <message>Did you mean <message>Bayankala</message>? </message>
+      <example type="incorrect"><marker>Maylanka</marker></example>
+      <example type="correct"><marker>Bayankala</marker></example>
+    </rule>
+    <rule name="Nave" id="NAVE">
+      <pattern><token>nave</token></pattern>
+      <message>Did you mean <message>knave</message>? </message>
+      <example type="incorrect"><marker>nave</marker></example>
+      <example type="correct"><marker>knave</marker></example>
+    </rule>
+    <rule name="Kosunkugi" id="KOSUNKUGI">
+      <pattern><token>Kosunkugi</token></pattern>
+      <message>Did you mean <message>Gosunkugi</message>? </message>
+      <example type="incorrect"><marker>Kosunkugi</marker></example>
+      <example type="correct"><marker>Gosunkugi</marker></example>
+    </rule>
+    <rule name="Bombori" id="BOMBORI">
+      <pattern><token>bombori</token></pattern>
+      <message>Did you mean <message>bonbori</message>? </message>
+      <example type="incorrect"><marker>bombori</marker></example>
+      <example type="correct"><marker>bonbori</marker></example>
+    </rule>
+    <rule name="Mouse" id="MOUSE">
+      <pattern><token>Mouse</token></pattern>
+      <message>Did you mean <message>Mousse</message>? </message>
+      <example type="incorrect"><marker>Mouse</marker></example>
+      <example type="correct"><marker>Mousse</marker></example>
+    </rule>
+    <rule name="Gosenkugi" id="GOSENKUGI">
+      <pattern><token>Gosenkugi</token></pattern>
+      <message>Did you mean <message>Gosunkugi</message>? </message>
+      <example type="incorrect"><marker>Gosenkugi</marker></example>
+      <example type="correct"><marker>Gosunkugi</marker></example>
+    </rule>
+    <rule name="Xain Pu" id="XAIN_PU">
+      <pattern><token>Xain</token><token>Pu</token></pattern>
+      <message>Did you mean <message>Xian Pu</message>? </message>
+      <example type="incorrect"><marker>Xain Pu</marker></example>
+      <example type="correct"><marker>Xian Pu</marker></example>
+    </rule>
+    <rule name="At The Alter" id="AT_THE_ALTER">
+      <pattern><token>at</token><token>the</token><token>Alter</token></pattern>
+      <message>Did you mean <message>at the altar</message>? </message>
+      <example type="incorrect"><marker>at the Alter</marker></example>
+      <example type="correct"><marker>at the altar</marker></example>
+    </rule>
+    <rule name="Bonbouri" id="BONBOURI">
+      <pattern><token>bonbouri</token></pattern>
+      <message>Did you mean <message>bonbori</message>? </message>
+      <example type="incorrect"><marker>bonbouri</marker></example>
+      <example type="correct"><marker>bonbori</marker></example>
+    </rule>
+    <rule name="Bare \W? An Heir" id="BARE__W__AN_HEIR">
+      <pattern><token>bare</token><token>\w?</token><token>an</token><token>heir</token></pattern>
+      <message>Did you mean <message>bear ? an heir</message>? </message>
+      <example type="incorrect"><marker>bare \w? an heir</marker></example>
+      <example type="correct"><marker>bear ? an heir</marker></example>
+    </rule>
+    <rule name="Juketsuzoku" id="JUKETSUZOKU">
+      <pattern><token>Juketsuzoku</token></pattern>
+      <message>Did you mean <message>Joketsuzoku</message>? </message>
+      <example type="incorrect"><marker>Juketsuzoku</marker></example>
+      <example type="correct"><marker>Joketsuzoku</marker></example>
+    </rule>
+    <rule name="Furincan" id="FURINCAN">
+      <pattern><token>Furincan</token></pattern>
+      <message>Did you mean <message>Furinkan</message>? </message>
+      <example type="incorrect"><marker>Furincan</marker></example>
+      <example type="correct"><marker>Furinkan</marker></example>
+    </rule>
+    <rule name="Sempia" id="SEMPIA">
+      <pattern><token>sempia</token></pattern>
+      <message>Did you mean <message>sempai</message>? </message>
+      <example type="incorrect"><marker>sempia</marker></example>
+      <example type="correct"><marker>sempai</marker></example>
+    </rule>
+    <rule name="Yamaken-Sen" id="YAMAKEN-SEN">
+      <pattern><token>yamaken-sen</token></pattern>
+      <message>Did you mean <message>yamasen-ken</message>? </message>
+      <example type="incorrect"><marker>yamaken-sen</marker></example>
+      <example type="correct"><marker>yamasen-ken</marker></example>
+    </rule>
+    <rule name="Konatsu Kenzan" id="KONATSU_KENZAN">
+      <pattern><token>Konatsu</token><token>Kenzan</token></pattern>
+      <message>Did you mean <message>Konatsu</message>? Kenzan is a title, not a name.</message>
+      <example type="incorrect"><marker>Konatsu Kenzan</marker></example>
+      <example type="correct"><marker>Konatsu</marker></example>
+    </rule>
+    <rule name="Koucho Kuno" id="KOUCHO_KUNO">
+      <pattern><token>Koucho</token><token>Kuno</token></pattern>
+      <message>Did you mean <message>Principal Kuno</message>? Koucho means Principal. It's a title and, for the sake of consistency and readability, should be translated as such.</message>
+      <example type="incorrect"><marker>Koucho Kuno</marker></example>
+      <example type="correct"><marker>Principal Kuno</marker></example>
+    </rule>
+    <rule name="Neremians" id="NEREMIANS">
+      <pattern><token>Neremians</token></pattern>
+      <message>Did you mean <message>Nerimians</message>? I doubt there's a proper english word for "People of Nerima", but Nerimians is at least using the proper root word.</message>
+      <example type="incorrect"><marker>Neremians</marker></example>
+      <example type="correct"><marker>Nerimians</marker></example>
+    </rule>
+    <rule name="Sound Said" id="SOUND_SAID">
+      <pattern><token>Sound</token><token>said</token></pattern>
+      <message>Did you mean <message>Soun said</message>? </message>
+      <example type="incorrect"><marker>Sound said</marker></example>
+      <example type="correct"><marker>Soun said</marker></example>
+    </rule>
+    <rule name="Kusami" id="KUSAMI">
+      <pattern><token>Kusami</token></pattern>
+      <message>Did you mean <message>Kasumi</message>? </message>
+      <example type="incorrect"><marker>Kusami</marker></example>
+      <example type="correct"><marker>Kasumi</marker></example>
+    </rule>
+    <rule name="Kazumi" id="KAZUMI">
+      <pattern><token>Kazumi</token></pattern>
+      <message>Did you mean <message>Kasumi</message>? </message>
+      <example type="incorrect"><marker>Kazumi</marker></example>
+      <example type="correct"><marker>Kasumi</marker></example>
+    </rule>
+    <rule name="Nokaka" id="NOKAKA">
+      <pattern><token>Nokaka</token></pattern>
+      <message>Did you mean <message>Nodoka</message>? </message>
+      <example type="incorrect"><marker>Nokaka</marker></example>
+      <example type="correct"><marker>Nodoka</marker></example>
+    </rule>
+    <rule name="Naanichuan" id="NAANICHUAN">
+      <pattern><token>Naanichuan</token></pattern>
+      <message>Did you mean <message>Nannichuan</message>? </message>
+      <example type="incorrect"><marker>Naanichuan</marker></example>
+      <example type="correct"><marker>Nannichuan</marker></example>
+    </rule>
+    <rule name="Kono" id="KONO">
+      <pattern><token>Kono</token></pattern>
+      <message>Did you mean <message>Kuno</message>? </message>
+      <example type="incorrect"><marker>Kono</marker></example>
+      <example type="correct"><marker>Kuno</marker></example>
+    </rule>
+    <rule name="Nerimanian" id="NERIMANIAN">
+      <pattern><token>Nerimanian</token></pattern>
+      <message>Did you mean <message>Neriman</message>? </message>
+      <example type="incorrect"><marker>Nerimanian</marker></example>
+      <example type="correct"><marker>Neriman</marker></example>
+    </rule>
+    <rule name="Furinkhan" id="FURINKHAN">
+      <pattern><token>Furinkhan</token></pattern>
+      <message>Did you mean <message>Furinkan</message>? </message>
+      <example type="incorrect"><marker>Furinkhan</marker></example>
+      <example type="correct"><marker>Furinkan</marker></example>
+    </rule>
+    <rule name="Bonborries" id="BONBORRIES">
+      <pattern><token>bonborries</token></pattern>
+      <message>Did you mean <message>bonbori</message>? Bonbori is plural.</message>
+      <example type="incorrect"><marker>bonborries</marker></example>
+      <example type="correct"><marker>bonbori</marker></example>
+    </rule>
+    <rule name="Bayenkala" id="BAYENKALA">
+      <pattern><token>Bayenkala</token></pattern>
+      <message>Did you mean <message>Bayankala</message>? TODO: Confirm spelling.</message>
+      <example type="incorrect"><marker>Bayenkala</marker></example>
+      <example type="correct"><marker>Bayankala</marker></example>
+    </rule>
+    <rule name="Neko Hanton" id="NEKO_HANTON">
+      <pattern><token>Neko</token><token>Hanton</token></pattern>
+      <message>Did you mean <message>Nekohanten</message>? </message>
+      <example type="incorrect"><marker>Neko Hanton</marker></example>
+      <example type="correct"><marker>Nekohanten</marker></example>
+    </rule>
+    <rule name="Nannittuan" id="NANNITTUAN">
+      <pattern><token>Nannittuan</token></pattern>
+      <message>Did you mean <message>Nannichuan</message>? </message>
+      <example type="incorrect"><marker>Nannittuan</marker></example>
+      <example type="correct"><marker>Nannichuan</marker></example>
+    </rule>
+  </category>
+  <category name="Sailor Moon">
+    <!--TODO: Hand-tune this and fill in the example tags.-->
+    <rule name="Amy" id="AMY">
+      <pattern><token>Amy</token></pattern>
+      <message>Did you mean <message>Ami</message>? Don't use the names from the english dub. They make the more experienced fans shudder.</message>
+      <example type="incorrect"><marker>Amy</marker></example>
+      <example type="correct"><marker>Ami</marker></example>
+    </rule>
+    <rule name="Mina" id="MINA">
+      <pattern><token>Mina</token></pattern>
+      <message>Did you mean <message>Minako</message>? Don't use the names from the english dub. They make the more experienced fans shudder.</message>
+      <example type="incorrect"><marker>Mina</marker></example>
+      <example type="correct"><marker>Minako</marker></example>
+    </rule>
+    <rule name="Serena" id="SERENA">
+      <pattern><token>Serena</token></pattern>
+      <message>Did you mean <message>Usagi</message>? Don't use the names from the english dub. They make the more experienced fans shudder.</message>
+      <example type="incorrect"><marker>Serena</marker></example>
+      <example type="correct"><marker>Usagi</marker></example>
+    </rule>
+    <rule name="Bunny" id="BUNNY">
+      <pattern><token>Bunny</token></pattern>
+      <message>Did you mean <message>Usagi</message>? Don't use the names from the english dub. They make the more experienced fans shudder.</message>
+      <example type="incorrect"><marker>Bunny</marker></example>
+      <example type="correct"><marker>Usagi</marker></example>
+    </rule>
+    <rule name="Ray" id="RAY">
+      <pattern><token>Ray</token></pattern>
+      <message>Did you mean <message>Rei</message>? Don't use the names from the english dub. They make the more experienced fans shudder.</message>
+      <example type="incorrect"><marker>Ray</marker></example>
+      <example type="correct"><marker>Rei</marker></example>
+    </rule>
+    <rule name="Lita" id="LITA">
+      <pattern><token>Lita</token></pattern>
+      <message>Did you mean <message>Makoto</message>? Don't use the names from the english dub. They make the more experienced fans shudder.</message>
+      <example type="incorrect"><marker>Lita</marker></example>
+      <example type="correct"><marker>Makoto</marker></example>
+    </rule>
+    <rule name="Susan" id="SUSAN">
+      <pattern><token>Susan</token></pattern>
+      <message>Did you mean <message>Setsuna</message>? Don't use the names from the english dub. They make the more experienced fans shudder.</message>
+      <example type="incorrect"><marker>Susan</marker></example>
+      <example type="correct"><marker>Setsuna</marker></example>
+    </rule>
+    <rule name="Scouts" id="SCOUTS">
+      <pattern><token>scouts</token></pattern>
+      <message>Did you mean <message>senshi</message>? Senshi (the original Japanese name) means Soldiers, not Scouts. Don't devalue the characters.</message>
+      <example type="incorrect"><marker>scouts</marker></example>
+      <example type="correct"><marker>senshi</marker></example>
+    </rule>
+    <rule name="Yuma" id="YUMA">
+      <pattern><token>yuma</token></pattern>
+      <message>Did you mean <message>youma</message>? Unless it's the name of a new character specific to your fanfic, it can only be a typo. If it's a character name, it'll make experienced fans cringe.</message>
+      <example type="incorrect"><marker>yuma</marker></example>
+      <example type="correct"><marker>youma</marker></example>
+    </rule>
+    <rule name="Matallia" id="MATALLIA">
+      <pattern><token>Matallia</token></pattern>
+      <message>Did you mean <message>Metallia</message>? </message>
+      <example type="incorrect"><marker>Matallia</marker></example>
+      <example type="correct"><marker>Metallia</marker></example>
+    </rule>
+    <rule name="Selenity" id="SELENITY">
+      <pattern><token>Selenity</token></pattern>
+      <message>Did you mean <message>Serenity</message>? I was amazed to see that someone used "engrish" in a fanfic.</message>
+      <example type="incorrect"><marker>Selenity</marker></example>
+      <example type="correct"><marker>Serenity</marker></example>
+    </rule>
+    <rule name="Hotura" id="HOTURA">
+      <pattern><token>Hotura</token></pattern>
+      <message>Did you mean <message>Hotarui</message>? I don't know whether this correction would be obvious to a spell-checking algorithm.</message>
+      <example type="incorrect"><marker>Hotura</marker></example>
+      <example type="correct"><marker>Hotarui</marker></example>
+    </rule>
+    <rule name="Makato" id="MAKATO">
+      <pattern><token>Makato</token></pattern>
+      <message>Did you mean <message>Makoto</message>? TODO: This line should be part of the aspell supplemental dictionary I construct</message>
+      <example type="incorrect"><marker>Makato</marker></example>
+      <example type="correct"><marker>Makoto</marker></example>
+    </rule>
+    <rule name="Zoasite" id="ZOASITE">
+      <pattern><token>zoasite</token></pattern>
+      <message>Did you mean <message>Zoisite</message>? TODO: Confirm the spelling of the correction.</message>
+      <example type="incorrect"><marker>zoasite</marker></example>
+      <example type="correct"><marker>Zoisite</marker></example>
+    </rule>
+    <rule name="Mirachu" id="MIRACHU">
+      <pattern><token>Mirachu</token></pattern>
+      <message>Did you mean <message>Michiru</message>? </message>
+      <example type="incorrect"><marker>Mirachu</marker></example>
+      <example type="correct"><marker>Michiru</marker></example>
+    </rule>
+    <rule name="Jubaan" id="JUBAAN">
+      <pattern><token>Jubaan</token></pattern>
+      <message>Did you mean <message>Juuban</message>? </message>
+      <example type="incorrect"><marker>Jubaan</marker></example>
+      <example type="correct"><marker>Juuban</marker></example>
+    </rule>
+  </category>
+</rules>
+

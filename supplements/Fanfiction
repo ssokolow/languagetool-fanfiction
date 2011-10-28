@@ -1,6 +1,6 @@
 #TODO: This should be more extensible. Perhaps XML?
 
-rouge		rogue
+rouge		rogue	The number of cases in which 'rouge' is actually used intentionally, rather than as a typo of 'rogue' is vanishingly small.
 physic 		psychic		I've never seen someone use physic instead of physical or physique, only psychic
 Koalla-su	Kaolla-su
 bokan		bokken
