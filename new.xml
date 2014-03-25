@@ -204,7 +204,7 @@
     </rule>
     <rule name="Wooded Leg" id="WOODED_LEG">
       <pattern><token>wooded</token><token>leg</token></pattern>
-      <message>Did you mean <message>wooden leg</message>? </message>
+      <message>A <message>wooded leg</message> would be a leg with a forest (woods) growing on it. Did you mean <message>wooden leg</message> (A leg made of wood)? </message>
       <example type="incorrect"><marker>wooded leg</marker></example>
       <example type="correct"><marker>wooden leg</marker></example>
     </rule>
