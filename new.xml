@@ -196,6 +196,12 @@
       <example type="correct"><marker>too loose</marker></example>
       <example type="correct"><marker>to lose</marker></example>
     </rule>
+    <rule name="Weary Of" id="WEARY_OF">
+      <pattern><token>weary</token><token>of</token></pattern>
+      <message>To be <message>weary</message> is to be tired. Did you mean <message>wary of</message> (on guard against threats from)? </message>
+      <example type="incorrect">He was acting <marker>weary of</marker> them.</example>
+      <example type="correct">He was acting <marker>wary of</marker> them.</example>
+    </rule>
     <rule name="Wooded Leg" id="WOODED_LEG">
       <pattern><token>wooded</token><token>leg</token></pattern>
       <message>Did you mean <message>wooden leg</message>? </message>
